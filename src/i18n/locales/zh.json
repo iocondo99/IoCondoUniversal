@@ -1,0 +1,542 @@
+{
+  "app": {
+    "name": "我的小区",
+    "loginTagline": "登录以查看账单、通知和文件",
+    "footer": "小区管理 · 演示版本"
+  },
+  "common": {
+    "save": "保存",
+    "saving": "保存中…",
+    "cancel": "取消",
+    "create": "创建",
+    "edit": "编辑",
+    "delete": "删除",
+    "open": "打开",
+    "add": "＋ 添加",
+    "choose": "— 请选择 —",
+    "yes": "是",
+    "none": "—",
+    "confirmDelete": "确定要永久删除此项吗？",
+    "close": "关闭",
+    "downloadPdf": "下载 PDF",
+    "upload": "上传文件",
+    "uploading": "上传中…",
+    "file": "文件",
+    "noFile": "无文件",
+    "view": "打开",
+    "send": "发送",
+    "sending": "发送中…",
+    "all": "全部",
+    "confirm": "确认",
+    "back": "返回",
+    "total": "合计"
+  },
+  "nav": {
+    "home": "首页",
+    "buildings": "小区",
+    "bills": "账单",
+    "notices": "通知",
+    "documents": "文件",
+    "reports": "报修",
+    "logout": "退出",
+    "spese": "费用",
+    "calendario": "日历",
+    "spazi": "公共空间",
+    "assemblee": "业主大会",
+    "raccolta": "垃圾分类",
+    "pacchi": "包裹",
+    "contatti": "联系方式",
+    "notifiche": "通知消息",
+    "anagrafica": "人员档案",
+    "archivio": "档案"
+  },
+  "language": {
+    "label": "语言"
+  },
+  "roles": {
+    "super_admin": "超级管理员",
+    "admin": "管理员",
+    "portiere": "门卫",
+    "condomino": "业主"
+  },
+  "auth": {
+    "emailLabel": "电子邮箱",
+    "emailPlaceholder": "name@esempio.it",
+    "passwordLabel": "密码",
+    "signIn": "登录",
+    "signingIn": "正在登录…",
+    "envWarning": "⚠️ 请在 .env 文件中配置您的 Supabase 项目的 URL 和密钥。",
+    "demoHint": "使用演示用户快速试用（密码 Demo1234!）：",
+    "demo": {
+      "admin": "管理员",
+      "mario": "业主（Mario）",
+      "portiere": "门卫"
+    }
+  },
+  "dashboard": {
+    "greeting": "你好 {{name}} 👋",
+    "subtitle": "以下是当前情况概览。",
+    "buildings": "小区",
+    "billsToPay": "待付账单",
+    "notices": "通知",
+    "openReports": "未处理的报修",
+    "insuranceTitle": "即将到期的保单",
+    "insuranceSub": "60 天内到期的保单",
+    "sendReminder": "发送提醒",
+    "reminderSent": "提醒已发送"
+  },
+  "bills": {
+    "title": "您的账单",
+    "subtitle": "金额、到期日和付款状态",
+    "emptyTitle": "暂无账单",
+    "emptyText": "目前没有可显示的账单。",
+    "installment": "分期",
+    "dueShort": "到期 {{date}}",
+    "status": {
+      "pagato": "已付款",
+      "parziale": "部分付款",
+      "scaduto": "已逾期",
+      "non_pagato": "待付款"
+    },
+    "generate": "批量生成账单",
+    "generated": "账单已生成",
+    "generateHint": "根据某期分期为每个单元生成一份账单。",
+    "selectInstallment": "选择分期",
+    "notify": "通知业主"
+  },
+  "notices": {
+    "title": "通知",
+    "subtitle": "来自管理员的通知",
+    "emptyTitle": "暂无通知",
+    "emptyText": "目前没有任何通知。",
+    "priority": {
+      "info": "信息",
+      "importante": "重要",
+      "urgente": "紧急"
+    }
+  },
+  "documents": {
+    "title": "文件",
+    "subtitle": "规章、会议记录和通知",
+    "emptyTitle": "暂无文件",
+    "emptyText": "目前没有可供您查看的文件。",
+    "notUploaded": "该文件尚未上传到存储空间。"
+  },
+  "reports": {
+    "title": "报修",
+    "subtitleStaff": "管理业主的报修",
+    "subtitleResident": "需要报告的故障和问题",
+    "new": "＋ 新建报修",
+    "emptyTitle": "暂无报修",
+    "emptyText": "当您报告问题后，会显示在这里。",
+    "building": "小区",
+    "problemType": "问题类型",
+    "titleField": "标题",
+    "titlePlaceholder": "例如：楼梯灯坏了",
+    "description": "描述",
+    "descriptionPlaceholder": "请描述问题…",
+    "submit": "提交报修",
+    "submitting": "提交中…",
+    "changeStatus": "更改状态：",
+    "type": {
+      "guasto": "故障",
+      "rumore": "噪音",
+      "pulizia": "清洁",
+      "sicurezza": "安全",
+      "vicinato": "邻里",
+      "altro": "其他"
+    }
+  },
+  "buildings": {
+    "title": "小区",
+    "subtitle": "选择一个小区进行管理",
+    "new": "＋ 新建小区",
+    "newTitle": "新建小区",
+    "emptyTitle": "暂无小区",
+    "emptyText": "请添加第一个小区。",
+    "open": "打开 →",
+    "backAll": "← 所有小区",
+    "fields": {
+      "denominazione": "小区名称",
+      "indirizzo": "地址",
+      "citta": "城市",
+      "cap": "邮政编码",
+      "provincia": "省份（缩写）",
+      "codice_fiscale": "税号"
+    }
+  },
+  "entity": {
+    "emptyTitle": "暂无项目",
+    "emptyReadOnly": "没有可显示的内容。",
+    "emptyEditable": "使用按钮添加第一个。",
+    "newTitle": "新建：{{title}}",
+    "editTitle": "编辑 {{title}}"
+  },
+  "detail": {
+    "tabs": {
+      "unita": "单元",
+      "condomini": "业主",
+      "esercizi": "会计年度",
+      "rate": "分期",
+      "bollettini": "账单",
+      "documenti": "文件",
+      "avvisi": "通知",
+      "assemblee": "业主大会",
+      "polizze": "保单",
+      "spazi": "公共空间",
+      "raccolta": "垃圾分类",
+      "pacchi": "包裹",
+      "spese": "费用",
+      "eventi": "事件"
+    },
+    "titles": {
+      "unita": "房产单元",
+      "condomini": "业主（分配）",
+      "esercizi": "会计年度",
+      "rate": "分期",
+      "bollettini": "账单",
+      "documenti": "文件",
+      "avvisi": "通知",
+      "assemblee": "业主大会",
+      "polizze": "保险保单",
+      "spazi": "公共空间",
+      "raccolta": "垃圾分类",
+      "pacchi": "包裹",
+      "spese": "费用",
+      "eventi": "事件"
+    },
+    "f": {
+      "identificativo": "标识符",
+      "tipo": "类型",
+      "tipologia": "类别",
+      "piano": "楼层",
+      "scala": "楼梯/单元",
+      "millesimi": "份额（千分比）",
+      "millesimi_proprieta": "产权份额（千分比）",
+      "superficie": "面积（平方米）",
+      "persona": "人员",
+      "unita": "单元",
+      "ruolo": "角色",
+      "dal": "起始",
+      "al": "截止",
+      "data_inizio": "开始日期",
+      "data_fine": "结束日期",
+      "esercizio": "会计年度",
+      "nome": "名称",
+      "stato": "状态",
+      "descrizione": "描述",
+      "scadenza": "到期日",
+      "totale": "合计",
+      "importo_totale": "总金额",
+      "dovuto": "应付",
+      "importo_dovuto": "应付金额",
+      "stato_pagamento": "付款状态",
+      "importo_pagato": "已付金额",
+      "metodo": "方式",
+      "titolo": "标题",
+      "contenuto": "内容",
+      "priorita": "优先级",
+      "destinatari": "接收人",
+      "visibilita": "可见性",
+      "data_documento": "文件日期",
+      "file_url": "文件路径（存储空间）",
+      "file_url_ph": "例如 {{prefix}}/file.pdf",
+      "data": "日期",
+      "data_ora": "日期和时间",
+      "luogo": "地点",
+      "modalita": "形式",
+      "convocazione": "召集",
+      "ordine_giorno": "议程",
+      "compagnia": "保险公司",
+      "numero_polizza": "保单号",
+      "decorrenza": "生效日期",
+      "premio_annuale": "年度保费",
+      "capienza": "容量",
+      "capienza_max": "最大容量",
+      "durata_max": "最长时长（分钟）",
+      "anticipo_min": "最短提前预约时间（小时）",
+      "rifiuto": "垃圾",
+      "tipo_rifiuto": "垃圾类型",
+      "giorno": "日期",
+      "orario": "时间",
+      "orario_esposizione": "投放时间",
+      "corriere": "快递公司",
+      "unita_destinataria": "收件单元"
+    }
+  },
+  "enums": {
+    "tipologiaUnita": {
+      "appartamento": "公寓",
+      "box": "车库",
+      "cantina": "地下室",
+      "negozio": "商铺",
+      "ufficio": "办公室",
+      "altro": "其他"
+    },
+    "ruoloUnita": {
+      "proprietario": "业主",
+      "inquilino": "租户",
+      "usufruttuario": "用益权人",
+      "comodatario": "借用人"
+    },
+    "statoEsercizio": {
+      "aperto": "开启",
+      "chiuso": "已关闭",
+      "approvato": "已批准"
+    },
+    "tipologiaRata": {
+      "ordinaria": "常规",
+      "straordinaria": "特别"
+    },
+    "statoPagamento": {
+      "non_pagato": "未付款",
+      "parziale": "部分付款",
+      "pagato": "已付款",
+      "scaduto": "已逾期"
+    },
+    "metodoPagamento": {
+      "bonifico": "银行转账",
+      "mav": "MAV",
+      "pagopa": "PagoPA",
+      "contanti": "现金",
+      "assegno": "支票",
+      "carta": "银行卡"
+    },
+    "tipologiaDocumento": {
+      "verbale": "会议记录",
+      "contratto": "合同",
+      "fattura": "发票",
+      "regolamento": "规章",
+      "preventivo": "预算",
+      "consuntivo": "决算",
+      "convocazione": "召集通知",
+      "polizza": "保单",
+      "altro": "其他"
+    },
+    "visibilitaDocumento": {
+      "tutti": "所有人",
+      "amministratore": "管理员",
+      "specifica_unita": "指定单元"
+    },
+    "tipologiaPolizza": {
+      "globale_fabbricato": "建筑综合险",
+      "rc": "责任险",
+      "incendio": "火灾险",
+      "furto": "盗窃险",
+      "altro": "其他"
+    },
+    "prioritaAvviso": {
+      "info": "信息",
+      "importante": "重要",
+      "urgente": "紧急"
+    },
+    "destinatariAvviso": {
+      "tutti": "所有人",
+      "amministratore": "管理员",
+      "condomini": "业主",
+      "portieri": "门卫"
+    },
+    "tipologiaAssemblea": {
+      "ordinaria": "常规",
+      "straordinaria": "特别"
+    },
+    "convocazione": {
+      "prima": "第一次",
+      "seconda": "第二次"
+    },
+    "modalitaAssemblea": {
+      "presenza": "现场",
+      "online": "线上",
+      "mista": "混合"
+    },
+    "tipoRifiuto": {
+      "umido": "湿垃圾",
+      "plastica": "塑料",
+      "carta": "纸张",
+      "vetro": "玻璃",
+      "indifferenziato": "其他垃圾",
+      "organico": "有机垃圾",
+      "metallo": "金属"
+    },
+    "statoPacco": {
+      "in_giacenza": "暂存中",
+      "ritirato": "已领取",
+      "rispedito": "已退回"
+    },
+    "statoSegnalazione": {
+      "aperta": "已提交",
+      "in_lavorazione": "处理中",
+      "risolta": "已解决",
+      "chiusa": "已关闭",
+      "annullata": "已取消"
+    },
+    "giorniSettimana": {
+      "0": "星期日",
+      "1": "星期一",
+      "2": "星期二",
+      "3": "星期三",
+      "4": "星期四",
+      "5": "星期五",
+      "6": "星期六"
+    },
+    "categoriaSpesa": {
+      "pulizie": "清洁",
+      "manutenzione": "维护",
+      "energia": "电费",
+      "acqua": "水费",
+      "ascensore": "电梯",
+      "assicurazione": "保险",
+      "giardinaggio": "园艺",
+      "amministrazione": "管理",
+      "altro": "其他"
+    },
+    "eventoTipo": {
+      "assemblea": "业主大会",
+      "manutenzione": "维护",
+      "scadenza": "截止",
+      "riunione": "会议",
+      "altro": "其他"
+    },
+    "votoScelta": {
+      "favorevole": "赞成",
+      "contrario": "反对",
+      "astenuto": "弃权"
+    }
+  },
+  "errors": {
+    "title": "发生错误",
+    "generic": "出了点问题。请重试。",
+    "network": "连接出现问题。请检查网络后重试。",
+    "notConfigured": "应用程序配置不正确。",
+    "boundaryTitle": "哎呀，出了点问题",
+    "boundaryText": "发生了意外错误。请尝试重新加载页面。",
+    "reload": "重新加载页面",
+    "auth": {
+      "invalidCredentials": "邮箱或密码不正确。",
+      "sessionExpired": "会话已过期。请重新登录。"
+    },
+    "db": {
+      "duplicate": "已存在具有这些数据的项目。",
+      "foreignKey": "操作不被允许：该项目与其他数据相关联。",
+      "notNull": "请填写所有必填字段。",
+      "permission": "您没有执行此操作的权限。",
+      "notFound": "未找到该项目。"
+    },
+    "upload": "文件上传失败。",
+    "alreadyVoted": "您已经投过票了。",
+    "noVoteRight": "您没有本次投票的表决权。"
+  },
+  "spese": {
+    "title": "小区费用",
+    "subtitle": "按类别分摊",
+    "empty": "暂无费用记录。",
+    "category": "类别",
+    "amount": "金额",
+    "total": "合计",
+    "period": "会计年度"
+  },
+  "calendario": {
+    "title": "日历",
+    "subtitle": "活动、业主大会和到期事项",
+    "empty": "暂无计划中的活动。"
+  },
+  "spazi": {
+    "title": "公共空间",
+    "subtitle": "预订您小区的公共空间",
+    "empty": "暂无可用的公共空间。",
+    "capacity": "容量",
+    "book": "预订",
+    "bookTitle": "预订：{{name}}",
+    "from": "从",
+    "to": "至",
+    "note": "备注",
+    "myBookings": "我的预订",
+    "noBookings": "暂无预订。",
+    "cancel": "取消预订",
+    "overlap": "该时间段已被预订。",
+    "booked": "预订已确认"
+  },
+  "assemblee": {
+    "title": "业主大会",
+    "subtitle": "召集通知、档案和投票",
+    "empty": "暂无业主大会。",
+    "agenda": "议程",
+    "upcoming": "即将召开",
+    "archive": "档案",
+    "votings": "投票",
+    "vote": "投票",
+    "voteTitle": "投票：{{title}}",
+    "voted": "您已投票",
+    "closedVoting": "投票已结束",
+    "results": "结果",
+    "convoke": "召集（发送通知）",
+    "convoked": "召集通知已发送给业主",
+    "newVoting": "＋ 新建投票",
+    "openVoting": "开始投票",
+    "closeVoting": "结束投票",
+    "weight": "份额权重"
+  },
+  "raccoltaPage": {
+    "title": "垃圾分类",
+    "subtitle": "垃圾投放日历",
+    "empty": "暂无可用的垃圾收集日历。"
+  },
+  "pacchiPage": {
+    "title": "包裹",
+    "subtitleResident": "寄给您的待领包裹",
+    "subtitleStaff": "门房包裹管理",
+    "empty": "暂无包裹。",
+    "new": "＋ 登记包裹",
+    "markCollected": "标记为已领取",
+    "collected": "已领取",
+    "recipient": "收件人"
+  },
+  "contatti": {
+    "title": "联系方式",
+    "subtitle": "管理员及实用联系信息",
+    "admin": "管理员",
+    "email": "电子邮箱",
+    "phone": "电话",
+    "empty": "暂无可用联系方式。"
+  },
+  "notifiche": {
+    "title": "通知消息",
+    "empty": "暂无通知。",
+    "markAllRead": "全部标为已读",
+    "unread": "未读"
+  },
+  "anagrafica": {
+    "title": "人员档案与角色",
+    "subtitle": "管理业主、门卫和访问权限",
+    "empty": "暂无用户。",
+    "new": "＋ 新建用户",
+    "role": "角色",
+    "firstName": "名字",
+    "lastName": "姓氏",
+    "email": "电子邮箱",
+    "phone": "电话",
+    "assignUnit": "分配到单元",
+    "assignRole": "单元中的角色",
+    "onboarding": "新业主入驻",
+    "onboardingHint": "创建档案并将其关联到某个单元：业主将立即看到其所在小区的账单、通知和文件。",
+    "invite": "创建并关联"
+  },
+  "archivio": {
+    "title": "按单元归档",
+    "subtitle": "按房产单元查看历史记录",
+    "selectUnit": "选择一个单元",
+    "bills": "账单",
+    "docs": "文件",
+    "reports": "报修",
+    "residents": "关联人员",
+    "empty": "该单元暂无数据。"
+  },
+  "segnalazioni": {
+    "photo": "照片",
+    "addPhoto": "添加照片",
+    "viewPhoto": "查看照片",
+    "assignee": "负责人",
+    "unassigned": "未分配",
+    "assign": "分配给"
+  }
+}

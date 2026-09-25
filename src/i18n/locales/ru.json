@@ -1,0 +1,542 @@
+{
+  "app": {
+    "name": "Мой кондоминиум",
+    "loginTagline": "Войдите, чтобы просматривать платёжки, объявления и документы",
+    "footer": "Управление кондоминиумом · демонстрационная версия"
+  },
+  "common": {
+    "save": "Сохранить",
+    "saving": "Сохранение…",
+    "cancel": "Отмена",
+    "create": "Создать",
+    "edit": "Изменить",
+    "delete": "Удалить",
+    "open": "Открыть",
+    "add": "＋ Добавить",
+    "choose": "— выберите —",
+    "yes": "Да",
+    "none": "—",
+    "confirmDelete": "Удалить этот элемент безвозвратно?",
+    "close": "Закрыть",
+    "downloadPdf": "Скачать PDF",
+    "upload": "Загрузить файл",
+    "uploading": "Загрузка…",
+    "file": "Файл",
+    "noFile": "Нет файла",
+    "view": "Открыть",
+    "send": "Отправить",
+    "sending": "Отправка…",
+    "all": "Все",
+    "confirm": "Подтвердить",
+    "back": "Назад",
+    "total": "Итого"
+  },
+  "nav": {
+    "home": "Главная",
+    "buildings": "Кондоминиумы",
+    "bills": "Платёжки",
+    "notices": "Объявления",
+    "documents": "Документы",
+    "reports": "Заявки",
+    "logout": "Выйти",
+    "spese": "Расходы",
+    "calendario": "Календарь",
+    "spazi": "Помещения",
+    "assemblee": "Собрания",
+    "raccolta": "Сбор отходов",
+    "pacchi": "Посылки",
+    "contatti": "Контакты",
+    "notifiche": "Уведомления",
+    "anagrafica": "Реестр",
+    "archivio": "Архив"
+  },
+  "language": {
+    "label": "Язык"
+  },
+  "roles": {
+    "super_admin": "Суперадминистратор",
+    "admin": "Администратор",
+    "portiere": "Консьерж",
+    "condomino": "Жилец"
+  },
+  "auth": {
+    "emailLabel": "Адрес электронной почты",
+    "emailPlaceholder": "name@example.ru",
+    "passwordLabel": "Пароль",
+    "signIn": "Войти",
+    "signingIn": "Выполняется вход…",
+    "envWarning": "⚠️ Настройте файл .env с URL и ключом вашего проекта Supabase.",
+    "demoHint": "Быстрая проба с демо-пользователями (пароль Demo1234!):",
+    "demo": {
+      "admin": "Администратор",
+      "mario": "Жилец (Марио)",
+      "portiere": "Консьерж"
+    }
+  },
+  "dashboard": {
+    "greeting": "Привет, {{name}} 👋",
+    "subtitle": "Вот краткая сводка ситуации.",
+    "buildings": "Кондоминиумы",
+    "billsToPay": "Платёжки к оплате",
+    "notices": "Объявления",
+    "openReports": "Открытые заявки",
+    "insuranceTitle": "Истекающие полисы",
+    "insuranceSub": "Полисы, срок действия которых истекает в течение 60 дней",
+    "sendReminder": "Отправить напоминание",
+    "reminderSent": "Напоминание отправлено"
+  },
+  "bills": {
+    "title": "Ваши платёжки",
+    "subtitle": "Суммы, сроки и статус платежей",
+    "emptyTitle": "Нет платёжек",
+    "emptyText": "На данный момент нет платёжек для отображения.",
+    "installment": "Взнос",
+    "dueShort": "срок {{date}}",
+    "status": {
+      "pagato": "Оплачено",
+      "parziale": "Частично",
+      "scaduto": "Просрочено",
+      "non_pagato": "К оплате"
+    },
+    "generate": "Сгенерировать платёжки массово",
+    "generated": "Платёжки сгенерированы",
+    "generateHint": "Создать платёжку для каждой единицы на основе взноса.",
+    "selectInstallment": "Выберите взнос",
+    "notify": "Уведомить жильцов"
+  },
+  "notices": {
+    "title": "Объявления",
+    "subtitle": "Сообщения от администратора",
+    "emptyTitle": "Нет объявлений",
+    "emptyText": "На данный момент сообщений нет.",
+    "priority": {
+      "info": "Информация",
+      "importante": "Важно",
+      "urgente": "Срочно"
+    }
+  },
+  "documents": {
+    "title": "Документы",
+    "subtitle": "Регламенты, протоколы и сообщения",
+    "emptyTitle": "Нет документов",
+    "emptyText": "Для вас нет доступных документов.",
+    "notUploaded": "Файл ещё не загружен в Хранилище."
+  },
+  "reports": {
+    "title": "Заявки",
+    "subtitleStaff": "Управляйте заявками жильцов",
+    "subtitleResident": "Неисправности и проблемы для сообщения",
+    "new": "＋ Новая заявка",
+    "emptyTitle": "Нет заявок",
+    "emptyText": "Когда вы сообщите о проблеме, она появится здесь.",
+    "building": "Кондоминиум",
+    "problemType": "Тип проблемы",
+    "titleField": "Заголовок",
+    "titlePlaceholder": "Напр. Не работает свет на лестнице",
+    "description": "Описание",
+    "descriptionPlaceholder": "Опишите проблему…",
+    "submit": "Отправить заявку",
+    "submitting": "Отправка…",
+    "changeStatus": "Изменить статус:",
+    "type": {
+      "guasto": "неисправность",
+      "rumore": "шум",
+      "pulizia": "уборка",
+      "sicurezza": "безопасность",
+      "vicinato": "соседи",
+      "altro": "другое"
+    }
+  },
+  "buildings": {
+    "title": "Кондоминиумы",
+    "subtitle": "Выберите кондоминиум для управления",
+    "new": "＋ Новый кондоминиум",
+    "newTitle": "Новый кондоминиум",
+    "emptyTitle": "Нет кондоминиумов",
+    "emptyText": "Добавьте первый кондоминиум.",
+    "open": "Открыть →",
+    "backAll": "← Все кондоминиумы",
+    "fields": {
+      "denominazione": "Название кондоминиума",
+      "indirizzo": "Адрес",
+      "citta": "Город",
+      "cap": "Почтовый индекс",
+      "provincia": "Регион (код)",
+      "codice_fiscale": "Налоговый код"
+    }
+  },
+  "entity": {
+    "emptyTitle": "Нет элементов",
+    "emptyReadOnly": "Нечего показывать.",
+    "emptyEditable": "Используйте кнопку, чтобы добавить первый.",
+    "newTitle": "Новый: {{title}}",
+    "editTitle": "Изменить {{title}}"
+  },
+  "detail": {
+    "tabs": {
+      "unita": "Единицы",
+      "condomini": "Жильцы",
+      "esercizi": "Отчётные периоды",
+      "rate": "Взносы",
+      "bollettini": "Платёжки",
+      "documenti": "Документы",
+      "avvisi": "Объявления",
+      "assemblee": "Собрания",
+      "polizze": "Полисы",
+      "spazi": "Помещения",
+      "raccolta": "Сбор отходов",
+      "pacchi": "Посылки",
+      "spese": "Расходы",
+      "eventi": "События"
+    },
+    "titles": {
+      "unita": "Объекты недвижимости",
+      "condomini": "Жильцы (закрепления)",
+      "esercizi": "Учётные периоды",
+      "rate": "Взносы",
+      "bollettini": "Платёжки",
+      "documenti": "Документы",
+      "avvisi": "Объявления",
+      "assemblee": "Собрания",
+      "polizze": "Страховые полисы",
+      "spazi": "Места общего пользования",
+      "raccolta": "Раздельный сбор отходов",
+      "pacchi": "Посылки",
+      "spese": "Расходы",
+      "eventi": "События"
+    },
+    "f": {
+      "identificativo": "Идентификатор",
+      "tipo": "Тип",
+      "tipologia": "Категория",
+      "piano": "Этаж",
+      "scala": "Подъезд",
+      "millesimi": "Доли",
+      "millesimi_proprieta": "Доли собственности",
+      "superficie": "Площадь (кв. м)",
+      "persona": "Лицо",
+      "unita": "Единица",
+      "ruolo": "Роль",
+      "dal": "С",
+      "al": "По",
+      "data_inizio": "Дата начала",
+      "data_fine": "Дата окончания",
+      "esercizio": "Отчётный период",
+      "nome": "Имя",
+      "stato": "Статус",
+      "descrizione": "Описание",
+      "scadenza": "Срок",
+      "totale": "Итого",
+      "importo_totale": "Общая сумма",
+      "dovuto": "К оплате",
+      "importo_dovuto": "Сумма к оплате",
+      "stato_pagamento": "Статус платежа",
+      "importo_pagato": "Оплаченная сумма",
+      "metodo": "Способ",
+      "titolo": "Заголовок",
+      "contenuto": "Содержание",
+      "priorita": "Приоритет",
+      "destinatari": "Получатели",
+      "visibilita": "Видимость",
+      "data_documento": "Дата документа",
+      "file_url": "Путь к файлу (Хранилище)",
+      "file_url_ph": "напр. {{prefix}}/file.pdf",
+      "data": "Дата",
+      "data_ora": "Дата и время",
+      "luogo": "Место",
+      "modalita": "Формат",
+      "convocazione": "Созыв",
+      "ordine_giorno": "Повестка дня",
+      "compagnia": "Компания",
+      "numero_polizza": "Номер полиса",
+      "decorrenza": "Дата вступления в силу",
+      "premio_annuale": "Годовая премия",
+      "capienza": "Вместимость",
+      "capienza_max": "Максимальная вместимость",
+      "durata_max": "Макс. длительность (минуты)",
+      "anticipo_min": "Минимальное предупреждение (часы)",
+      "rifiuto": "Отходы",
+      "tipo_rifiuto": "Тип отходов",
+      "giorno": "День",
+      "orario": "Время",
+      "orario_esposizione": "Время выставления",
+      "corriere": "Курьер",
+      "unita_destinataria": "Единица-получатель"
+    }
+  },
+  "enums": {
+    "tipologiaUnita": {
+      "appartamento": "квартира",
+      "box": "гараж",
+      "cantina": "подвал",
+      "negozio": "магазин",
+      "ufficio": "офис",
+      "altro": "другое"
+    },
+    "ruoloUnita": {
+      "proprietario": "собственник",
+      "inquilino": "арендатор",
+      "usufruttuario": "узуфруктуарий",
+      "comodatario": "ссудополучатель"
+    },
+    "statoEsercizio": {
+      "aperto": "открыт",
+      "chiuso": "закрыт",
+      "approvato": "утверждён"
+    },
+    "tipologiaRata": {
+      "ordinaria": "обычный",
+      "straordinaria": "внеочередной"
+    },
+    "statoPagamento": {
+      "non_pagato": "не оплачено",
+      "parziale": "частично",
+      "pagato": "оплачено",
+      "scaduto": "просрочено"
+    },
+    "metodoPagamento": {
+      "bonifico": "банковский перевод",
+      "mav": "MAV",
+      "pagopa": "pagoPA",
+      "contanti": "наличные",
+      "assegno": "чек",
+      "carta": "карта"
+    },
+    "tipologiaDocumento": {
+      "verbale": "протокол",
+      "contratto": "договор",
+      "fattura": "счёт-фактура",
+      "regolamento": "регламент",
+      "preventivo": "смета",
+      "consuntivo": "отчёт о расходах",
+      "convocazione": "уведомление о созыве",
+      "polizza": "полис",
+      "altro": "другое"
+    },
+    "visibilitaDocumento": {
+      "tutti": "все",
+      "amministratore": "администратор",
+      "specifica_unita": "конкретная единица"
+    },
+    "tipologiaPolizza": {
+      "globale_fabbricato": "комплексное страхование здания",
+      "rc": "гражданская ответственность",
+      "incendio": "пожар",
+      "furto": "кража",
+      "altro": "другое"
+    },
+    "prioritaAvviso": {
+      "info": "инфо",
+      "importante": "важно",
+      "urgente": "срочно"
+    },
+    "destinatariAvviso": {
+      "tutti": "все",
+      "amministratore": "администратор",
+      "condomini": "жильцы",
+      "portieri": "консьержи"
+    },
+    "tipologiaAssemblea": {
+      "ordinaria": "очередное",
+      "straordinaria": "внеочередное"
+    },
+    "convocazione": {
+      "prima": "первый",
+      "seconda": "второй"
+    },
+    "modalitaAssemblea": {
+      "presenza": "очно",
+      "online": "онлайн",
+      "mista": "смешанный"
+    },
+    "tipoRifiuto": {
+      "umido": "пищевые отходы",
+      "plastica": "пластик",
+      "carta": "бумага",
+      "vetro": "стекло",
+      "indifferenziato": "несортированные",
+      "organico": "органические",
+      "metallo": "металл"
+    },
+    "statoPacco": {
+      "in_giacenza": "на хранении",
+      "ritirato": "получено",
+      "rispedito": "отправлено обратно"
+    },
+    "statoSegnalazione": {
+      "aperta": "открыта",
+      "in_lavorazione": "в работе",
+      "risolta": "решена",
+      "chiusa": "закрыта",
+      "annullata": "отменена"
+    },
+    "giorniSettimana": {
+      "0": "Воскресенье",
+      "1": "Понедельник",
+      "2": "Вторник",
+      "3": "Среда",
+      "4": "Четверг",
+      "5": "Пятница",
+      "6": "Суббота"
+    },
+    "categoriaSpesa": {
+      "pulizie": "уборка",
+      "manutenzione": "обслуживание",
+      "energia": "электроэнергия",
+      "acqua": "вода",
+      "ascensore": "лифт",
+      "assicurazione": "страхование",
+      "giardinaggio": "озеленение",
+      "amministrazione": "администрирование",
+      "altro": "другое"
+    },
+    "eventoTipo": {
+      "assemblea": "собрание",
+      "manutenzione": "обслуживание",
+      "scadenza": "срок",
+      "riunione": "встреча",
+      "altro": "другое"
+    },
+    "votoScelta": {
+      "favorevole": "за",
+      "contrario": "против",
+      "astenuto": "воздержался"
+    }
+  },
+  "errors": {
+    "title": "Произошла ошибка",
+    "generic": "Что-то пошло не так. Попробуйте снова.",
+    "network": "Проблема с подключением. Проверьте сеть и попробуйте снова.",
+    "notConfigured": "Приложение настроено неправильно.",
+    "boundaryTitle": "Упс, что-то пошло не так",
+    "boundaryText": "Произошла непредвиденная ошибка. Попробуйте перезагрузить страницу.",
+    "reload": "Перезагрузить страницу",
+    "auth": {
+      "invalidCredentials": "Неверный email или пароль.",
+      "sessionExpired": "Сессия истекла. Войдите снова."
+    },
+    "db": {
+      "duplicate": "Элемент с такими данными уже существует.",
+      "foreignKey": "Операция не разрешена: элемент связан с другими данными.",
+      "notNull": "Заполните все обязательные поля.",
+      "permission": "У вас нет прав на эту операцию.",
+      "notFound": "Элемент не найден."
+    },
+    "upload": "Не удалось загрузить файл.",
+    "alreadyVoted": "Вы уже проголосовали.",
+    "noVoteRight": "У вас нет права голоса в этом голосовании."
+  },
+  "spese": {
+    "title": "Расходы кондоминиума",
+    "subtitle": "Распределение по категориям",
+    "empty": "Расходы не зарегистрированы.",
+    "category": "Категория",
+    "amount": "Сумма",
+    "total": "Итого",
+    "period": "Отчётный период"
+  },
+  "calendario": {
+    "title": "Календарь",
+    "subtitle": "События, собрания и сроки",
+    "empty": "Нет запланированных событий."
+  },
+  "spazi": {
+    "title": "Места общего пользования",
+    "subtitle": "Бронируйте помещения вашего кондоминиума",
+    "empty": "Нет доступных мест общего пользования.",
+    "capacity": "Вместимость",
+    "book": "Забронировать",
+    "bookTitle": "Бронирование: {{name}}",
+    "from": "С",
+    "to": "До",
+    "note": "Примечания",
+    "myBookings": "Мои бронирования",
+    "noBookings": "Нет бронирований.",
+    "cancel": "Отменить бронирование",
+    "overlap": "Помещение уже забронировано на это время.",
+    "booked": "Бронирование подтверждено"
+  },
+  "assemblee": {
+    "title": "Собрания",
+    "subtitle": "Созывы, архив и голосования",
+    "empty": "Нет собраний.",
+    "agenda": "Повестка дня",
+    "upcoming": "Запланированные",
+    "archive": "Архив",
+    "votings": "Голосования",
+    "vote": "Голосовать",
+    "voteTitle": "Голосование: {{title}}",
+    "voted": "Вы уже проголосовали",
+    "closedVoting": "Голосование закрыто",
+    "results": "Результаты",
+    "convoke": "Созвать (отправить уведомления)",
+    "convoked": "Уведомление о созыве отправлено жильцам",
+    "newVoting": "＋ Новое голосование",
+    "openVoting": "Открыть голосование",
+    "closeVoting": "Закрыть голосование",
+    "weight": "Вес долей"
+  },
+  "raccoltaPage": {
+    "title": "Раздельный сбор отходов",
+    "subtitle": "Календарь выставления отходов",
+    "empty": "Нет доступного календаря сбора."
+  },
+  "pacchiPage": {
+    "title": "Посылки",
+    "subtitleResident": "Посылки, прибывающие для вас",
+    "subtitleStaff": "Управление посылками на ресепшене",
+    "empty": "Нет посылок.",
+    "new": "＋ Зарегистрировать посылку",
+    "markCollected": "Отметить как полученную",
+    "collected": "Получено",
+    "recipient": "Получатель"
+  },
+  "contatti": {
+    "title": "Контакты",
+    "subtitle": "Администратор и полезные контакты",
+    "admin": "Администратор",
+    "email": "Email",
+    "phone": "Телефон",
+    "empty": "Нет доступных контактов."
+  },
+  "notifiche": {
+    "title": "Уведомления",
+    "empty": "Нет уведомлений.",
+    "markAllRead": "Отметить все как прочитанные",
+    "unread": "непрочитанные"
+  },
+  "anagrafica": {
+    "title": "Реестр и роли",
+    "subtitle": "Управляйте жильцами, консьержами и доступами",
+    "empty": "Нет пользователей.",
+    "new": "＋ Новый пользователь",
+    "role": "Роль",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Email",
+    "phone": "Телефон",
+    "assignUnit": "Закрепить за единицей",
+    "assignRole": "Роль в единице",
+    "onboarding": "Регистрация нового жильца",
+    "onboardingHint": "Создайте профиль и привяжите его к единице: жилец сразу увидит платёжки, объявления и документы своего кондоминиума.",
+    "invite": "Создать и привязать"
+  },
+  "archivio": {
+    "title": "Архив по единицам",
+    "subtitle": "История по объекту недвижимости",
+    "selectUnit": "Выберите единицу",
+    "bills": "Платёжки",
+    "docs": "Документы",
+    "reports": "Заявки",
+    "residents": "Связанные лица",
+    "empty": "Нет данных по этой единице."
+  },
+  "segnalazioni": {
+    "photo": "Фото",
+    "addPhoto": "Добавить фото",
+    "viewPhoto": "Посмотреть фото",
+    "assignee": "Ответственный",
+    "unassigned": "Не назначена",
+    "assign": "Назначить"
+  }
+}

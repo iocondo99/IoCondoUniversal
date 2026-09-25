@@ -1,0 +1,542 @@
+{
+  "app": {
+    "name": "Meine Eigentümergemeinschaft",
+    "loginTagline": "Melde dich an, um Zahlscheine, Mitteilungen und Dokumente zu sehen",
+    "footer": "Hausverwaltung · Demoversion"
+  },
+  "common": {
+    "save": "Speichern",
+    "saving": "Speichern…",
+    "cancel": "Abbrechen",
+    "create": "Erstellen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "open": "Öffnen",
+    "add": "＋ Hinzufügen",
+    "choose": "— auswählen —",
+    "yes": "Ja",
+    "none": "—",
+    "confirmDelete": "Dieses Element endgültig löschen?",
+    "close": "Schließen",
+    "downloadPdf": "PDF herunterladen",
+    "upload": "Datei hochladen",
+    "uploading": "Hochladen…",
+    "file": "Datei",
+    "noFile": "Keine Datei",
+    "view": "Öffnen",
+    "send": "Senden",
+    "sending": "Senden…",
+    "all": "Alle",
+    "confirm": "Bestätigen",
+    "back": "Zurück",
+    "total": "Gesamt"
+  },
+  "nav": {
+    "home": "Start",
+    "buildings": "Eigentümergemeinschaften",
+    "bills": "Zahlscheine",
+    "notices": "Mitteilungen",
+    "documents": "Dokumente",
+    "reports": "Meldungen",
+    "logout": "Abmelden",
+    "spese": "Ausgaben",
+    "calendario": "Kalender",
+    "spazi": "Räume",
+    "assemblee": "Versammlungen",
+    "raccolta": "Mülltrennung",
+    "pacchi": "Pakete",
+    "contatti": "Kontakte",
+    "notifiche": "Benachrichtigungen",
+    "anagrafica": "Stammdaten",
+    "archivio": "Archiv"
+  },
+  "language": {
+    "label": "Sprache"
+  },
+  "roles": {
+    "super_admin": "Super-Administrator",
+    "admin": "Administrator",
+    "portiere": "Hausmeister",
+    "condomino": "Miteigentümer"
+  },
+  "auth": {
+    "emailLabel": "E-Mail-Adresse",
+    "emailPlaceholder": "name@beispiel.de",
+    "passwordLabel": "Passwort",
+    "signIn": "Anmelden",
+    "signingIn": "Anmeldung läuft…",
+    "envWarning": "⚠️ Konfiguriere die .env-Datei mit der URL und dem Schlüssel deines Supabase-Projekts.",
+    "demoHint": "Schnelltest mit Demo-Benutzern (Passwort Demo1234!):",
+    "demo": {
+      "admin": "Administrator",
+      "mario": "Miteigentümer (Mario)",
+      "portiere": "Hausmeister"
+    }
+  },
+  "dashboard": {
+    "greeting": "Hallo {{name}} 👋",
+    "subtitle": "Hier ist eine Zusammenfassung der Lage.",
+    "buildings": "Eigentümergemeinschaften",
+    "billsToPay": "Offene Zahlscheine",
+    "notices": "Mitteilungen",
+    "openReports": "Offene Meldungen",
+    "insuranceTitle": "Auslaufende Versicherungen",
+    "insuranceSub": "Versicherungen, die innerhalb von 60 Tagen ablaufen",
+    "sendReminder": "Erinnerung senden",
+    "reminderSent": "Erinnerung gesendet"
+  },
+  "bills": {
+    "title": "Deine Zahlscheine",
+    "subtitle": "Beträge, Fälligkeiten und Zahlungsstatus",
+    "emptyTitle": "Keine Zahlscheine",
+    "emptyText": "Derzeit gibt es keine Zahlscheine anzuzeigen.",
+    "installment": "Rate",
+    "dueShort": "fällig {{date}}",
+    "status": {
+      "pagato": "Bezahlt",
+      "parziale": "Teilweise",
+      "scaduto": "Überfällig",
+      "non_pagato": "Offen"
+    },
+    "generate": "Zahlscheine in großer Menge erstellen",
+    "generated": "Zahlscheine erstellt",
+    "generateHint": "Erstelle einen Zahlschein für jede Einheit ausgehend von einer Rate.",
+    "selectInstallment": "Rate auswählen",
+    "notify": "Miteigentümer benachrichtigen"
+  },
+  "notices": {
+    "title": "Mitteilungen",
+    "subtitle": "Mitteilungen der Verwaltung",
+    "emptyTitle": "Keine Mitteilungen",
+    "emptyText": "Derzeit gibt es keine Mitteilungen.",
+    "priority": {
+      "info": "Information",
+      "importante": "Wichtig",
+      "urgente": "Dringend"
+    }
+  },
+  "documents": {
+    "title": "Dokumente",
+    "subtitle": "Hausordnungen, Protokolle und Mitteilungen",
+    "emptyTitle": "Keine Dokumente",
+    "emptyText": "Es sind keine Dokumente für dich verfügbar.",
+    "notUploaded": "Die Datei wurde noch nicht in den Storage hochgeladen."
+  },
+  "reports": {
+    "title": "Meldungen",
+    "subtitleStaff": "Verwalte die Meldungen der Miteigentümer",
+    "subtitleResident": "Schäden und Probleme zum Melden",
+    "new": "＋ Neue Meldung",
+    "emptyTitle": "Keine Meldungen",
+    "emptyText": "Wenn du ein Problem meldest, findest du es hier.",
+    "building": "Eigentümergemeinschaft",
+    "problemType": "Art des Problems",
+    "titleField": "Titel",
+    "titlePlaceholder": "Z. B. Treppenhauslicht defekt",
+    "description": "Beschreibung",
+    "descriptionPlaceholder": "Beschreibe das Problem…",
+    "submit": "Meldung senden",
+    "submitting": "Senden…",
+    "changeStatus": "Status ändern:",
+    "type": {
+      "guasto": "Defekt",
+      "rumore": "Lärm",
+      "pulizia": "Reinigung",
+      "sicurezza": "Sicherheit",
+      "vicinato": "Nachbarschaft",
+      "altro": "Sonstiges"
+    }
+  },
+  "buildings": {
+    "title": "Eigentümergemeinschaften",
+    "subtitle": "Wähle eine Eigentümergemeinschaft zur Verwaltung",
+    "new": "＋ Neue Eigentümergemeinschaft",
+    "newTitle": "Neue Eigentümergemeinschaft",
+    "emptyTitle": "Keine Eigentümergemeinschaft",
+    "emptyText": "Füge die erste Eigentümergemeinschaft hinzu.",
+    "open": "Öffnen →",
+    "backAll": "← Alle Eigentümergemeinschaften",
+    "fields": {
+      "denominazione": "Name der Eigentümergemeinschaft",
+      "indirizzo": "Adresse",
+      "citta": "Stadt",
+      "cap": "PLZ",
+      "provincia": "Provinz (Kürzel)",
+      "codice_fiscale": "Steuernummer"
+    }
+  },
+  "entity": {
+    "emptyTitle": "Keine Elemente",
+    "emptyReadOnly": "Nichts anzuzeigen.",
+    "emptyEditable": "Verwende die Schaltfläche, um das erste hinzuzufügen.",
+    "newTitle": "Neu: {{title}}",
+    "editTitle": "{{title}} bearbeiten"
+  },
+  "detail": {
+    "tabs": {
+      "unita": "Einheiten",
+      "condomini": "Miteigentümer",
+      "esercizi": "Geschäftsjahre",
+      "rate": "Raten",
+      "bollettini": "Zahlscheine",
+      "documenti": "Dokumente",
+      "avvisi": "Mitteilungen",
+      "assemblee": "Versammlungen",
+      "polizze": "Versicherungen",
+      "spazi": "Räume",
+      "raccolta": "Mülltrennung",
+      "pacchi": "Pakete",
+      "spese": "Ausgaben",
+      "eventi": "Termine"
+    },
+    "titles": {
+      "unita": "Immobilieneinheiten",
+      "condomini": "Miteigentümer (Zuordnungen)",
+      "esercizi": "Geschäftsjahre",
+      "rate": "Raten",
+      "bollettini": "Zahlscheine",
+      "documenti": "Dokumente",
+      "avvisi": "Mitteilungen",
+      "assemblee": "Versammlungen",
+      "polizze": "Versicherungspolicen",
+      "spazi": "Gemeinschaftsräume",
+      "raccolta": "Mülltrennung",
+      "pacchi": "Pakete",
+      "spese": "Ausgaben",
+      "eventi": "Termine"
+    },
+    "f": {
+      "identificativo": "Kennung",
+      "tipo": "Art",
+      "tipologia": "Typ",
+      "piano": "Etage",
+      "scala": "Treppe",
+      "millesimi": "Miteigentumsanteile",
+      "millesimi_proprieta": "Eigentumsanteile",
+      "superficie": "Fläche (m²)",
+      "persona": "Person",
+      "unita": "Einheit",
+      "ruolo": "Rolle",
+      "dal": "Von",
+      "al": "Bis",
+      "data_inizio": "Startdatum",
+      "data_fine": "Enddatum",
+      "esercizio": "Geschäftsjahr",
+      "nome": "Name",
+      "stato": "Status",
+      "descrizione": "Beschreibung",
+      "scadenza": "Fälligkeit",
+      "totale": "Gesamt",
+      "importo_totale": "Gesamtbetrag",
+      "dovuto": "Geschuldet",
+      "importo_dovuto": "Geschuldeter Betrag",
+      "stato_pagamento": "Zahlungsstatus",
+      "importo_pagato": "Bezahlter Betrag",
+      "metodo": "Methode",
+      "titolo": "Titel",
+      "contenuto": "Inhalt",
+      "priorita": "Priorität",
+      "destinatari": "Empfänger",
+      "visibilita": "Sichtbarkeit",
+      "data_documento": "Dokumentdatum",
+      "file_url": "Dateipfad (Storage)",
+      "file_url_ph": "z. B. {{prefix}}/datei.pdf",
+      "data": "Datum",
+      "data_ora": "Datum und Uhrzeit",
+      "luogo": "Ort",
+      "modalita": "Modus",
+      "convocazione": "Einberufung",
+      "ordine_giorno": "Tagesordnung",
+      "compagnia": "Gesellschaft",
+      "numero_polizza": "Policennummer",
+      "decorrenza": "Beginn",
+      "premio_annuale": "Jahresprämie",
+      "capienza": "Kapazität",
+      "capienza_max": "Maximale Kapazität",
+      "durata_max": "Maximale Dauer (Minuten)",
+      "anticipo_min": "Mindestvorlauf (Stunden)",
+      "rifiuto": "Abfall",
+      "tipo_rifiuto": "Abfallart",
+      "giorno": "Tag",
+      "orario": "Uhrzeit",
+      "orario_esposizione": "Bereitstellungszeit",
+      "corriere": "Zusteller",
+      "unita_destinataria": "Empfängereinheit"
+    }
+  },
+  "enums": {
+    "tipologiaUnita": {
+      "appartamento": "Wohnung",
+      "box": "Garage",
+      "cantina": "Keller",
+      "negozio": "Geschäft",
+      "ufficio": "Büro",
+      "altro": "Sonstiges"
+    },
+    "ruoloUnita": {
+      "proprietario": "Eigentümer",
+      "inquilino": "Mieter",
+      "usufruttuario": "Nießbraucher",
+      "comodatario": "Leihnehmer"
+    },
+    "statoEsercizio": {
+      "aperto": "offen",
+      "chiuso": "abgeschlossen",
+      "approvato": "genehmigt"
+    },
+    "tipologiaRata": {
+      "ordinaria": "ordentlich",
+      "straordinaria": "außerordentlich"
+    },
+    "statoPagamento": {
+      "non_pagato": "nicht bezahlt",
+      "parziale": "teilweise",
+      "pagato": "bezahlt",
+      "scaduto": "überfällig"
+    },
+    "metodoPagamento": {
+      "bonifico": "Überweisung",
+      "mav": "MAV",
+      "pagopa": "PagoPA",
+      "contanti": "Bargeld",
+      "assegno": "Scheck",
+      "carta": "Karte"
+    },
+    "tipologiaDocumento": {
+      "verbale": "Protokoll",
+      "contratto": "Vertrag",
+      "fattura": "Rechnung",
+      "regolamento": "Hausordnung",
+      "preventivo": "Kostenvoranschlag",
+      "consuntivo": "Abrechnung",
+      "convocazione": "Einberufung",
+      "polizza": "Police",
+      "altro": "Sonstiges"
+    },
+    "visibilitaDocumento": {
+      "tutti": "alle",
+      "amministratore": "Administrator",
+      "specifica_unita": "bestimmte Einheit"
+    },
+    "tipologiaPolizza": {
+      "globale_fabbricato": "Gebäudeglobalversicherung",
+      "rc": "Haftpflicht",
+      "incendio": "Brand",
+      "furto": "Diebstahl",
+      "altro": "Sonstiges"
+    },
+    "prioritaAvviso": {
+      "info": "Info",
+      "importante": "wichtig",
+      "urgente": "dringend"
+    },
+    "destinatariAvviso": {
+      "tutti": "alle",
+      "amministratore": "Administrator",
+      "condomini": "Miteigentümer",
+      "portieri": "Hausmeister"
+    },
+    "tipologiaAssemblea": {
+      "ordinaria": "ordentlich",
+      "straordinaria": "außerordentlich"
+    },
+    "convocazione": {
+      "prima": "erste",
+      "seconda": "zweite"
+    },
+    "modalitaAssemblea": {
+      "presenza": "Präsenz",
+      "online": "online",
+      "mista": "hybrid"
+    },
+    "tipoRifiuto": {
+      "umido": "Biomüll",
+      "plastica": "Plastik",
+      "carta": "Papier",
+      "vetro": "Glas",
+      "indifferenziato": "Restmüll",
+      "organico": "Bioabfall",
+      "metallo": "Metall"
+    },
+    "statoPacco": {
+      "in_giacenza": "lagernd",
+      "ritirato": "abgeholt",
+      "rispedito": "zurückgesendet"
+    },
+    "statoSegnalazione": {
+      "aperta": "offen",
+      "in_lavorazione": "in Bearbeitung",
+      "risolta": "gelöst",
+      "chiusa": "geschlossen",
+      "annullata": "storniert"
+    },
+    "giorniSettimana": {
+      "0": "Sonntag",
+      "1": "Montag",
+      "2": "Dienstag",
+      "3": "Mittwoch",
+      "4": "Donnerstag",
+      "5": "Freitag",
+      "6": "Samstag"
+    },
+    "categoriaSpesa": {
+      "pulizie": "Reinigung",
+      "manutenzione": "Wartung",
+      "energia": "Strom",
+      "acqua": "Wasser",
+      "ascensore": "Aufzug",
+      "assicurazione": "Versicherung",
+      "giardinaggio": "Gartenpflege",
+      "amministrazione": "Verwaltung",
+      "altro": "Sonstiges"
+    },
+    "eventoTipo": {
+      "assemblea": "Versammlung",
+      "manutenzione": "Wartung",
+      "scadenza": "Frist",
+      "riunione": "Besprechung",
+      "altro": "Sonstiges"
+    },
+    "votoScelta": {
+      "favorevole": "dafür",
+      "contrario": "dagegen",
+      "astenuto": "enthalten"
+    }
+  },
+  "errors": {
+    "title": "Es ist ein Fehler aufgetreten",
+    "generic": "Etwas ist schiefgelaufen. Versuche es erneut.",
+    "network": "Verbindungsproblem. Überprüfe das Netzwerk und versuche es erneut.",
+    "notConfigured": "Anwendung nicht korrekt konfiguriert.",
+    "boundaryTitle": "Hoppla, etwas ist schiefgelaufen",
+    "boundaryText": "Es ist ein unerwarteter Fehler aufgetreten. Versuche, die Seite neu zu laden.",
+    "reload": "Seite neu laden",
+    "auth": {
+      "invalidCredentials": "E-Mail oder Passwort falsch.",
+      "sessionExpired": "Sitzung abgelaufen. Melde dich erneut an."
+    },
+    "db": {
+      "duplicate": "Es existiert bereits ein Element mit diesen Daten.",
+      "foreignKey": "Vorgang nicht zulässig: Das Element ist mit anderen Daten verknüpft.",
+      "notNull": "Fülle alle Pflichtfelder aus.",
+      "permission": "Du hast keine Berechtigung für diesen Vorgang.",
+      "notFound": "Element nicht gefunden."
+    },
+    "upload": "Hochladen der Datei fehlgeschlagen.",
+    "alreadyVoted": "Du hast deine Stimme bereits abgegeben.",
+    "noVoteRight": "Du bist nicht stimmberechtigt für diese Abstimmung."
+  },
+  "spese": {
+    "title": "Ausgaben der Eigentümergemeinschaft",
+    "subtitle": "Aufteilung nach Kategorie",
+    "empty": "Keine Ausgaben erfasst.",
+    "category": "Kategorie",
+    "amount": "Betrag",
+    "total": "Gesamt",
+    "period": "Geschäftsjahr"
+  },
+  "calendario": {
+    "title": "Kalender",
+    "subtitle": "Termine, Versammlungen und Fristen",
+    "empty": "Keine Termine geplant."
+  },
+  "spazi": {
+    "title": "Gemeinschaftsräume",
+    "subtitle": "Reserviere die Räume deiner Eigentümergemeinschaft",
+    "empty": "Keine Gemeinschaftsräume verfügbar.",
+    "capacity": "Kapazität",
+    "book": "Reservieren",
+    "bookTitle": "Reservieren: {{name}}",
+    "from": "Von",
+    "to": "Bis",
+    "note": "Notizen",
+    "myBookings": "Meine Reservierungen",
+    "noBookings": "Keine Reservierungen.",
+    "cancel": "Reservierung stornieren",
+    "overlap": "Raum zu dieser Uhrzeit bereits reserviert.",
+    "booked": "Reservierung bestätigt"
+  },
+  "assemblee": {
+    "title": "Versammlungen",
+    "subtitle": "Einberufungen, Archiv und Abstimmungen",
+    "empty": "Keine Versammlungen.",
+    "agenda": "Tagesordnung",
+    "upcoming": "Geplant",
+    "archive": "Archiv",
+    "votings": "Abstimmungen",
+    "vote": "Abstimmen",
+    "voteTitle": "Abstimmen: {{title}}",
+    "voted": "Du hast bereits abgestimmt",
+    "closedVoting": "Abstimmung geschlossen",
+    "results": "Ergebnisse",
+    "convoke": "Einberufen (Benachrichtigungen senden)",
+    "convoked": "Einberufung an die Miteigentümer gesendet",
+    "newVoting": "＋ Neue Abstimmung",
+    "openVoting": "Abstimmung öffnen",
+    "closeVoting": "Abstimmung schließen",
+    "weight": "Gewichtung Miteigentumsanteile"
+  },
+  "raccoltaPage": {
+    "title": "Mülltrennung",
+    "subtitle": "Bereitstellungskalender für den Abfall",
+    "empty": "Kein Abholkalender verfügbar."
+  },
+  "pacchiPage": {
+    "title": "Pakete",
+    "subtitleResident": "Die für dich eingehenden Pakete",
+    "subtitleStaff": "Paketverwaltung an der Pforte",
+    "empty": "Keine Pakete.",
+    "new": "＋ Paket erfassen",
+    "markCollected": "Als abgeholt markieren",
+    "collected": "Abgeholt",
+    "recipient": "Empfänger"
+  },
+  "contatti": {
+    "title": "Kontakte",
+    "subtitle": "Verwaltung und nützliche Ansprechpartner",
+    "admin": "Administrator",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "empty": "Kein Kontakt verfügbar."
+  },
+  "notifiche": {
+    "title": "Benachrichtigungen",
+    "empty": "Keine Benachrichtigungen.",
+    "markAllRead": "Alle als gelesen markieren",
+    "unread": "ungelesen"
+  },
+  "anagrafica": {
+    "title": "Stammdaten und Rollen",
+    "subtitle": "Verwalte Miteigentümer, Hausmeister und Zugänge",
+    "empty": "Keine Benutzer.",
+    "new": "＋ Neuer Benutzer",
+    "role": "Rolle",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "assignUnit": "Einer Einheit zuordnen",
+    "assignRole": "Rolle in der Einheit",
+    "onboarding": "Onboarding neuer Miteigentümer",
+    "onboardingHint": "Erstelle das Profil und verknüpfe es mit einer Einheit: Der Miteigentümer sieht sofort Zahlscheine, Mitteilungen und Dokumente seiner Eigentümergemeinschaft.",
+    "invite": "Erstellen und verknüpfen"
+  },
+  "archivio": {
+    "title": "Archiv nach Einheit",
+    "subtitle": "Verlauf nach Immobilieneinheit",
+    "selectUnit": "Wähle eine Einheit",
+    "bills": "Zahlscheine",
+    "docs": "Dokumente",
+    "reports": "Meldungen",
+    "residents": "Verknüpfte Personen",
+    "empty": "Keine Daten für diese Einheit."
+  },
+  "segnalazioni": {
+    "photo": "Foto",
+    "addPhoto": "Foto hinzufügen",
+    "viewPhoto": "Foto ansehen",
+    "assignee": "Zuständiger",
+    "unassigned": "Nicht zugewiesen",
+    "assign": "Zuweisen an"
+  }
+}

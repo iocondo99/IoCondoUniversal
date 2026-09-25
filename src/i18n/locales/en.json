@@ -1,0 +1,542 @@
+{
+  "app": {
+    "name": "My Condominium",
+    "loginTagline": "Sign in to view bills, notices and documents",
+    "footer": "Condominium Management · demo version"
+  },
+  "common": {
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "open": "Open",
+    "add": "＋ Add",
+    "choose": "— choose —",
+    "yes": "Yes",
+    "none": "—",
+    "confirmDelete": "Permanently delete this item?",
+    "close": "Close",
+    "downloadPdf": "Download PDF",
+    "upload": "Upload file",
+    "uploading": "Uploading…",
+    "file": "File",
+    "noFile": "No file",
+    "view": "Open",
+    "send": "Send",
+    "sending": "Sending…",
+    "all": "All",
+    "confirm": "Confirm",
+    "back": "Back",
+    "total": "Total"
+  },
+  "nav": {
+    "home": "Home",
+    "buildings": "Buildings",
+    "bills": "Bills",
+    "notices": "Notices",
+    "documents": "Documents",
+    "reports": "Reports",
+    "logout": "Log out",
+    "spese": "Expenses",
+    "calendario": "Calendar",
+    "spazi": "Spaces",
+    "assemblee": "Meetings",
+    "raccolta": "Waste",
+    "pacchi": "Parcels",
+    "contatti": "Contacts",
+    "notifiche": "Notifications",
+    "anagrafica": "People",
+    "archivio": "Archive"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "roles": {
+    "super_admin": "Super administrator",
+    "admin": "Administrator",
+    "portiere": "Concierge",
+    "condomino": "Resident"
+  },
+  "auth": {
+    "emailLabel": "Email address",
+    "emailPlaceholder": "name@example.com",
+    "passwordLabel": "Password",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "envWarning": "⚠️ Configure the .env file with your Supabase project URL and key.",
+    "demoHint": "Quick try with demo users (password Demo1234!):",
+    "demo": {
+      "admin": "Administrator",
+      "mario": "Resident (Mario)",
+      "portiere": "Concierge"
+    }
+  },
+  "dashboard": {
+    "greeting": "Hi {{name}} 👋",
+    "subtitle": "Here is a summary of the situation.",
+    "buildings": "Buildings",
+    "billsToPay": "Bills to pay",
+    "notices": "Notices",
+    "openReports": "Open reports",
+    "insuranceTitle": "Expiring policies",
+    "insuranceSub": "Policies expiring within 60 days",
+    "sendReminder": "Send reminder",
+    "reminderSent": "Reminder sent"
+  },
+  "bills": {
+    "title": "Your bills",
+    "subtitle": "Amounts, due dates and payment status",
+    "emptyTitle": "No bills",
+    "emptyText": "There are no bills to show at the moment.",
+    "installment": "Installment",
+    "dueShort": "due {{date}}",
+    "status": {
+      "pagato": "Paid",
+      "parziale": "Partial",
+      "scaduto": "Overdue",
+      "non_pagato": "To pay"
+    },
+    "generate": "Bulk generate bills",
+    "generated": "Bills generated",
+    "generateHint": "Create one bill per unit from an installment.",
+    "selectInstallment": "Choose the installment",
+    "notify": "Notify residents"
+  },
+  "notices": {
+    "title": "Notices",
+    "subtitle": "Communications from the administrator",
+    "emptyTitle": "No notices",
+    "emptyText": "There are no communications at the moment.",
+    "priority": {
+      "info": "Information",
+      "importante": "Important",
+      "urgente": "Urgent"
+    }
+  },
+  "documents": {
+    "title": "Documents",
+    "subtitle": "Regulations, minutes and communications",
+    "emptyTitle": "No documents",
+    "emptyText": "There are no documents available for you.",
+    "notUploaded": "The file has not been uploaded to Storage yet."
+  },
+  "reports": {
+    "title": "Reports",
+    "subtitleStaff": "Manage residents' reports",
+    "subtitleResident": "Faults and problems to report",
+    "new": "＋ New report",
+    "emptyTitle": "No reports",
+    "emptyText": "When you report a problem you'll find it here.",
+    "building": "Building",
+    "problemType": "Problem type",
+    "titleField": "Title",
+    "titlePlaceholder": "E.g. Broken stairwell light",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe the problem…",
+    "submit": "Send report",
+    "submitting": "Sending…",
+    "changeStatus": "Change status:",
+    "type": {
+      "guasto": "fault",
+      "rumore": "noise",
+      "pulizia": "cleaning",
+      "sicurezza": "safety",
+      "vicinato": "neighborhood",
+      "altro": "other"
+    }
+  },
+  "buildings": {
+    "title": "Buildings",
+    "subtitle": "Choose a building to manage it",
+    "new": "＋ New building",
+    "newTitle": "New building",
+    "emptyTitle": "No buildings",
+    "emptyText": "Add the first building.",
+    "open": "Open →",
+    "backAll": "← All buildings",
+    "fields": {
+      "denominazione": "Building name",
+      "indirizzo": "Address",
+      "citta": "City",
+      "cap": "ZIP code",
+      "provincia": "Province (code)",
+      "codice_fiscale": "Tax code"
+    }
+  },
+  "entity": {
+    "emptyTitle": "No items",
+    "emptyReadOnly": "Nothing to show.",
+    "emptyEditable": "Use the button to add the first one.",
+    "newTitle": "New: {{title}}",
+    "editTitle": "Edit {{title}}"
+  },
+  "detail": {
+    "tabs": {
+      "unita": "Units",
+      "condomini": "Residents",
+      "esercizi": "Periods",
+      "rate": "Installments",
+      "bollettini": "Bills",
+      "documenti": "Documents",
+      "avvisi": "Notices",
+      "assemblee": "Meetings",
+      "polizze": "Policies",
+      "spazi": "Spaces",
+      "raccolta": "Waste",
+      "pacchi": "Parcels",
+      "spese": "Expenses",
+      "eventi": "Events"
+    },
+    "titles": {
+      "unita": "Real estate units",
+      "condomini": "Residents (assignments)",
+      "esercizi": "Accounting periods",
+      "rate": "Installments",
+      "bollettini": "Bills",
+      "documenti": "Documents",
+      "avvisi": "Notices",
+      "assemblee": "Meetings",
+      "polizze": "Insurance policies",
+      "spazi": "Common spaces",
+      "raccolta": "Waste collection",
+      "pacchi": "Parcels",
+      "spese": "Expenses",
+      "eventi": "Events"
+    },
+    "f": {
+      "identificativo": "Identifier",
+      "tipo": "Type",
+      "tipologia": "Type",
+      "piano": "Floor",
+      "scala": "Staircase",
+      "millesimi": "Shares",
+      "millesimi_proprieta": "Ownership shares",
+      "superficie": "Area (sqm)",
+      "persona": "Person",
+      "unita": "Unit",
+      "ruolo": "Role",
+      "dal": "From",
+      "al": "To",
+      "data_inizio": "Start date",
+      "data_fine": "End date",
+      "esercizio": "Period",
+      "nome": "Name",
+      "stato": "Status",
+      "descrizione": "Description",
+      "scadenza": "Due date",
+      "totale": "Total",
+      "importo_totale": "Total amount",
+      "dovuto": "Due",
+      "importo_dovuto": "Amount due",
+      "stato_pagamento": "Payment status",
+      "importo_pagato": "Amount paid",
+      "metodo": "Method",
+      "titolo": "Title",
+      "contenuto": "Content",
+      "priorita": "Priority",
+      "destinatari": "Recipients",
+      "visibilita": "Visibility",
+      "data_documento": "Document date",
+      "file_url": "File path (Storage)",
+      "file_url_ph": "e.g. {{prefix}}/file.pdf",
+      "data": "Date",
+      "data_ora": "Date and time",
+      "luogo": "Location",
+      "modalita": "Mode",
+      "convocazione": "Call",
+      "ordine_giorno": "Agenda",
+      "compagnia": "Company",
+      "numero_polizza": "Policy number",
+      "decorrenza": "Effective date",
+      "premio_annuale": "Annual premium",
+      "capienza": "Capacity",
+      "capienza_max": "Maximum capacity",
+      "durata_max": "Max duration (minutes)",
+      "anticipo_min": "Minimum notice (hours)",
+      "rifiuto": "Waste",
+      "tipo_rifiuto": "Waste type",
+      "giorno": "Day",
+      "orario": "Time",
+      "orario_esposizione": "Collection time",
+      "corriere": "Courier",
+      "unita_destinataria": "Recipient unit"
+    }
+  },
+  "enums": {
+    "tipologiaUnita": {
+      "appartamento": "apartment",
+      "box": "garage",
+      "cantina": "cellar",
+      "negozio": "shop",
+      "ufficio": "office",
+      "altro": "other"
+    },
+    "ruoloUnita": {
+      "proprietario": "owner",
+      "inquilino": "tenant",
+      "usufruttuario": "usufructuary",
+      "comodatario": "borrower"
+    },
+    "statoEsercizio": {
+      "aperto": "open",
+      "chiuso": "closed",
+      "approvato": "approved"
+    },
+    "tipologiaRata": {
+      "ordinaria": "ordinary",
+      "straordinaria": "extraordinary"
+    },
+    "statoPagamento": {
+      "non_pagato": "unpaid",
+      "parziale": "partial",
+      "pagato": "paid",
+      "scaduto": "overdue"
+    },
+    "metodoPagamento": {
+      "bonifico": "bank transfer",
+      "mav": "mav",
+      "pagopa": "pagopa",
+      "contanti": "cash",
+      "assegno": "cheque",
+      "carta": "card"
+    },
+    "tipologiaDocumento": {
+      "verbale": "minutes",
+      "contratto": "contract",
+      "fattura": "invoice",
+      "regolamento": "regulation",
+      "preventivo": "quote",
+      "consuntivo": "statement",
+      "convocazione": "notice of meeting",
+      "polizza": "policy",
+      "altro": "other"
+    },
+    "visibilitaDocumento": {
+      "tutti": "everyone",
+      "amministratore": "administrator",
+      "specifica_unita": "specific unit"
+    },
+    "tipologiaPolizza": {
+      "globale_fabbricato": "building-wide",
+      "rc": "liability",
+      "incendio": "fire",
+      "furto": "theft",
+      "altro": "other"
+    },
+    "prioritaAvviso": {
+      "info": "info",
+      "importante": "important",
+      "urgente": "urgent"
+    },
+    "destinatariAvviso": {
+      "tutti": "everyone",
+      "amministratore": "administrator",
+      "condomini": "residents",
+      "portieri": "concierges"
+    },
+    "tipologiaAssemblea": {
+      "ordinaria": "ordinary",
+      "straordinaria": "extraordinary"
+    },
+    "convocazione": {
+      "prima": "first",
+      "seconda": "second"
+    },
+    "modalitaAssemblea": {
+      "presenza": "in person",
+      "online": "online",
+      "mista": "hybrid"
+    },
+    "tipoRifiuto": {
+      "umido": "wet waste",
+      "plastica": "plastic",
+      "carta": "paper",
+      "vetro": "glass",
+      "indifferenziato": "general waste",
+      "organico": "organic",
+      "metallo": "metal"
+    },
+    "statoPacco": {
+      "in_giacenza": "in storage",
+      "ritirato": "collected",
+      "rispedito": "returned"
+    },
+    "statoSegnalazione": {
+      "aperta": "open",
+      "in_lavorazione": "in progress",
+      "risolta": "resolved",
+      "chiusa": "closed",
+      "annullata": "cancelled"
+    },
+    "giorniSettimana": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    },
+    "categoriaSpesa": {
+      "pulizie": "cleaning",
+      "manutenzione": "maintenance",
+      "energia": "electricity",
+      "acqua": "water",
+      "ascensore": "elevator",
+      "assicurazione": "insurance",
+      "giardinaggio": "gardening",
+      "amministrazione": "administration",
+      "altro": "other"
+    },
+    "eventoTipo": {
+      "assemblea": "assembly",
+      "manutenzione": "maintenance",
+      "scadenza": "deadline",
+      "riunione": "meeting",
+      "altro": "other"
+    },
+    "votoScelta": {
+      "favorevole": "in favor",
+      "contrario": "against",
+      "astenuto": "abstained"
+    }
+  },
+  "errors": {
+    "title": "An error occurred",
+    "generic": "Something went wrong. Please try again.",
+    "network": "Connection problem. Check your network and try again.",
+    "notConfigured": "Application not configured correctly.",
+    "boundaryTitle": "Oops, something went wrong",
+    "boundaryText": "An unexpected error occurred. Try reloading the page.",
+    "reload": "Reload page",
+    "auth": {
+      "invalidCredentials": "Incorrect email or password.",
+      "sessionExpired": "Session expired. Please sign in again."
+    },
+    "db": {
+      "duplicate": "An item with this data already exists.",
+      "foreignKey": "Operation not allowed: the item is linked to other data.",
+      "notNull": "Please fill in all required fields.",
+      "permission": "You don't have permission for this operation.",
+      "notFound": "Item not found."
+    },
+    "upload": "File upload failed.",
+    "alreadyVoted": "You have already cast your vote.",
+    "noVoteRight": "You are not entitled to vote in this poll."
+  },
+  "spese": {
+    "title": "Building expenses",
+    "subtitle": "Breakdown by category",
+    "empty": "No expenses recorded.",
+    "category": "Category",
+    "amount": "Amount",
+    "total": "Total",
+    "period": "Period"
+  },
+  "calendario": {
+    "title": "Calendar",
+    "subtitle": "Events, meetings and deadlines",
+    "empty": "No upcoming events."
+  },
+  "spazi": {
+    "title": "Common spaces",
+    "subtitle": "Book your building's spaces",
+    "empty": "No common spaces available.",
+    "capacity": "Capacity",
+    "book": "Book",
+    "bookTitle": "Book: {{name}}",
+    "from": "From",
+    "to": "To",
+    "note": "Notes",
+    "myBookings": "My bookings",
+    "noBookings": "No bookings.",
+    "cancel": "Cancel booking",
+    "overlap": "The space is already booked at that time.",
+    "booked": "Booking confirmed"
+  },
+  "assemblee": {
+    "title": "Meetings",
+    "subtitle": "Notices, archive and votes",
+    "empty": "No meetings.",
+    "agenda": "Agenda",
+    "upcoming": "Upcoming",
+    "archive": "Archive",
+    "votings": "Votes",
+    "vote": "Vote",
+    "voteTitle": "Vote: {{title}}",
+    "voted": "You already voted",
+    "closedVoting": "Vote closed",
+    "results": "Results",
+    "convoke": "Convene (send notifications)",
+    "convoked": "Notice sent to residents",
+    "newVoting": "＋ New vote",
+    "openVoting": "Open vote",
+    "closeVoting": "Close vote",
+    "weight": "Share weight"
+  },
+  "raccoltaPage": {
+    "title": "Waste collection",
+    "subtitle": "Waste exposure schedule",
+    "empty": "No collection schedule available."
+  },
+  "pacchiPage": {
+    "title": "Parcels",
+    "subtitleResident": "Parcels arriving for you",
+    "subtitleStaff": "Concierge parcel management",
+    "empty": "No parcels.",
+    "new": "＋ Register parcel",
+    "markCollected": "Mark as collected",
+    "collected": "Collected",
+    "recipient": "Recipient"
+  },
+  "contatti": {
+    "title": "Contacts",
+    "subtitle": "Administrator and useful references",
+    "admin": "Administrator",
+    "email": "Email",
+    "phone": "Phone",
+    "empty": "No contacts available."
+  },
+  "notifiche": {
+    "title": "Notifications",
+    "empty": "No notifications.",
+    "markAllRead": "Mark all as read",
+    "unread": "unread"
+  },
+  "anagrafica": {
+    "title": "People and roles",
+    "subtitle": "Manage residents, concierges and access",
+    "empty": "No users.",
+    "new": "＋ New user",
+    "role": "Role",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "assignUnit": "Assign to unit",
+    "assignRole": "Role on the unit",
+    "onboarding": "New resident onboarding",
+    "onboardingHint": "Create the profile and link it to a unit: the resident will immediately see their building's bills, notices and documents.",
+    "invite": "Create and link"
+  },
+  "archivio": {
+    "title": "Archive by unit",
+    "subtitle": "History per real estate unit",
+    "selectUnit": "Choose a unit",
+    "bills": "Bills",
+    "docs": "Documents",
+    "reports": "Reports",
+    "residents": "Linked people",
+    "empty": "No data for this unit."
+  },
+  "segnalazioni": {
+    "photo": "Photo",
+    "addPhoto": "Add photo",
+    "viewPhoto": "View photo",
+    "assignee": "Assignee",
+    "unassigned": "Unassigned",
+    "assign": "Assign to"
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "app": {
+    "name": "Meu Condomínio",
+    "loginTagline": "Entre para ver boletos, avisos e documentos",
+    "footer": "Gestão de Condomínio · versão demonstrativa"
+  },
+  "common": {
+    "save": "Salvar",
+    "saving": "Salvando…",
+    "cancel": "Cancelar",
+    "create": "Criar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "open": "Abrir",
+    "add": "＋ Adicionar",
+    "choose": "— escolher —",
+    "yes": "Sim",
+    "none": "—",
+    "confirmDelete": "Excluir definitivamente este elemento?",
+    "close": "Fechar",
+    "downloadPdf": "Baixar PDF",
+    "upload": "Enviar arquivo",
+    "uploading": "Enviando…",
+    "file": "Arquivo",
+    "noFile": "Nenhum arquivo",
+    "view": "Abrir",
+    "send": "Enviar",
+    "sending": "Enviando…",
+    "all": "Todos",
+    "confirm": "Confirmar",
+    "back": "Voltar",
+    "total": "Total"
+  },
+  "nav": {
+    "home": "Início",
+    "buildings": "Condomínios",
+    "bills": "Boletos",
+    "notices": "Avisos",
+    "documents": "Documentos",
+    "reports": "Ocorrências",
+    "logout": "Sair",
+    "spese": "Despesas",
+    "calendario": "Calendário",
+    "spazi": "Espaços",
+    "assemblee": "Assembleias",
+    "raccolta": "Coleta",
+    "pacchi": "Encomendas",
+    "contatti": "Contatos",
+    "notifiche": "Notificações",
+    "anagrafica": "Cadastro",
+    "archivio": "Arquivo"
+  },
+  "language": {
+    "label": "Idioma"
+  },
+  "roles": {
+    "super_admin": "Super administrador",
+    "admin": "Administrador",
+    "portiere": "Porteiro",
+    "condomino": "Condômino"
+  },
+  "auth": {
+    "emailLabel": "Endereço de e-mail",
+    "emailPlaceholder": "nome@exemplo.com",
+    "passwordLabel": "Senha",
+    "signIn": "Entrar",
+    "signingIn": "Acesso em andamento…",
+    "envWarning": "⚠️ Configure o arquivo .env com a URL e a chave do seu projeto Supabase.",
+    "demoHint": "Teste rápido com usuários demo (senha Demo1234!):",
+    "demo": {
+      "admin": "Administrador",
+      "mario": "Condômino (Mario)",
+      "portiere": "Porteiro"
+    }
+  },
+  "dashboard": {
+    "greeting": "Olá {{name}} 👋",
+    "subtitle": "Veja um resumo da situação.",
+    "buildings": "Condomínios",
+    "billsToPay": "Boletos a pagar",
+    "notices": "Avisos",
+    "openReports": "Ocorrências abertas",
+    "insuranceTitle": "Apólices a vencer",
+    "insuranceSub": "Apólices que vencem em até 60 dias",
+    "sendReminder": "Enviar lembrete",
+    "reminderSent": "Lembrete enviado"
+  },
+  "bills": {
+    "title": "Seus boletos",
+    "subtitle": "Valores, vencimentos e status dos pagamentos",
+    "emptyTitle": "Nenhum boleto",
+    "emptyText": "No momento não há boletos para mostrar.",
+    "installment": "Parcela",
+    "dueShort": "venc. {{date}}",
+    "status": {
+      "pagato": "Pago",
+      "parziale": "Parcial",
+      "scaduto": "Vencido",
+      "non_pagato": "A pagar"
+    },
+    "generate": "Gerar boletos em massa",
+    "generated": "Boletos gerados",
+    "generateHint": "Crie um boleto para cada unidade a partir de uma parcela.",
+    "selectInstallment": "Escolha a parcela",
+    "notify": "Notificar os condôminos"
+  },
+  "notices": {
+    "title": "Avisos",
+    "subtitle": "Comunicados do administrador",
+    "emptyTitle": "Nenhum aviso",
+    "emptyText": "Não há comunicados no momento.",
+    "priority": {
+      "info": "Informação",
+      "importante": "Importante",
+      "urgente": "Urgente"
+    }
+  },
+  "documents": {
+    "title": "Documentos",
+    "subtitle": "Regulamentos, atas e comunicados",
+    "emptyTitle": "Nenhum documento",
+    "emptyText": "Não há documentos disponíveis para você.",
+    "notUploaded": "O arquivo ainda não foi enviado para o Storage."
+  },
+  "reports": {
+    "title": "Ocorrências",
+    "subtitleStaff": "Gerencie as ocorrências dos condôminos",
+    "subtitleResident": "Avarias e problemas a relatar",
+    "new": "＋ Nova ocorrência",
+    "emptyTitle": "Nenhuma ocorrência",
+    "emptyText": "Quando você relatar um problema, ele aparecerá aqui.",
+    "building": "Condomínio",
+    "problemType": "Tipo de problema",
+    "titleField": "Título",
+    "titlePlaceholder": "Ex. Luz da escada com defeito",
+    "description": "Descrição",
+    "descriptionPlaceholder": "Descreva o problema…",
+    "submit": "Enviar ocorrência",
+    "submitting": "Enviando…",
+    "changeStatus": "Alterar status:",
+    "type": {
+      "guasto": "avaria",
+      "rumore": "ruído",
+      "pulizia": "limpeza",
+      "sicurezza": "segurança",
+      "vicinato": "vizinhança",
+      "altro": "outro"
+    }
+  },
+  "buildings": {
+    "title": "Condomínios",
+    "subtitle": "Escolha um condomínio para gerenciá-lo",
+    "new": "＋ Novo condomínio",
+    "newTitle": "Novo condomínio",
+    "emptyTitle": "Nenhum condomínio",
+    "emptyText": "Adicione o primeiro condomínio.",
+    "open": "Abrir →",
+    "backAll": "← Todos os condomínios",
+    "fields": {
+      "denominazione": "Nome do condomínio",
+      "indirizzo": "Endereço",
+      "citta": "Cidade",
+      "cap": "CEP",
+      "provincia": "Estado (sigla)",
+      "codice_fiscale": "Cadastro fiscal"
+    }
+  },
+  "entity": {
+    "emptyTitle": "Nenhum elemento",
+    "emptyReadOnly": "Nada para mostrar.",
+    "emptyEditable": "Use o botão para adicionar o primeiro.",
+    "newTitle": "Novo: {{title}}",
+    "editTitle": "Editar {{title}}"
+  },
+  "detail": {
+    "tabs": {
+      "unita": "Unidades",
+      "condomini": "Condôminos",
+      "esercizi": "Exercícios",
+      "rate": "Parcelas",
+      "bollettini": "Boletos",
+      "documenti": "Documentos",
+      "avvisi": "Avisos",
+      "assemblee": "Assembleias",
+      "polizze": "Apólices",
+      "spazi": "Espaços",
+      "raccolta": "Coleta",
+      "pacchi": "Encomendas",
+      "spese": "Despesas",
+      "eventi": "Eventos"
+    },
+    "titles": {
+      "unita": "Unidades imobiliárias",
+      "condomini": "Condôminos (atribuições)",
+      "esercizi": "Exercícios contábeis",
+      "rate": "Parcelas",
+      "bollettini": "Boletos",
+      "documenti": "Documentos",
+      "avvisi": "Avisos",
+      "assemblee": "Assembleias",
+      "polizze": "Apólices de seguro",
+      "spazi": "Espaços comuns",
+      "raccolta": "Coleta seletiva",
+      "pacchi": "Encomendas",
+      "spese": "Despesas",
+      "eventi": "Eventos"
+    },
+    "f": {
+      "identificativo": "Identificador",
+      "tipo": "Tipo",
+      "tipologia": "Tipologia",
+      "piano": "Andar",
+      "scala": "Escada",
+      "millesimi": "Frações ideais",
+      "millesimi_proprieta": "Frações ideais de propriedade",
+      "superficie": "Área (m²)",
+      "persona": "Pessoa",
+      "unita": "Unidade",
+      "ruolo": "Função",
+      "dal": "De",
+      "al": "Até",
+      "data_inizio": "Data de início",
+      "data_fine": "Data de término",
+      "esercizio": "Exercício",
+      "nome": "Nome",
+      "stato": "Status",
+      "descrizione": "Descrição",
+      "scadenza": "Vencimento",
+      "totale": "Total",
+      "importo_totale": "Valor total",
+      "dovuto": "Devido",
+      "importo_dovuto": "Valor devido",
+      "stato_pagamento": "Status do pagamento",
+      "importo_pagato": "Valor pago",
+      "metodo": "Método",
+      "titolo": "Título",
+      "contenuto": "Conteúdo",
+      "priorita": "Prioridade",
+      "destinatari": "Destinatários",
+      "visibilita": "Visibilidade",
+      "data_documento": "Data do documento",
+      "file_url": "Caminho do arquivo (Storage)",
+      "file_url_ph": "ex. {{prefix}}/file.pdf",
+      "data": "Data",
+      "data_ora": "Data e hora",
+      "luogo": "Local",
+      "modalita": "Modalidade",
+      "convocazione": "Convocação",
+      "ordine_giorno": "Pauta do dia",
+      "compagnia": "Seguradora",
+      "numero_polizza": "Número da apólice",
+      "decorrenza": "Início da vigência",
+      "premio_annuale": "Prêmio anual",
+      "capienza": "Capacidade",
+      "capienza_max": "Capacidade máxima",
+      "durata_max": "Duração máx. (minutos)",
+      "anticipo_min": "Antecedência mínima (horas)",
+      "rifiuto": "Resíduo",
+      "tipo_rifiuto": "Tipo de resíduo",
+      "giorno": "Dia",
+      "orario": "Horário",
+      "orario_esposizione": "Horário de exposição",
+      "corriere": "Transportadora",
+      "unita_destinataria": "Unidade destinatária"
+    }
+  },
+  "enums": {
+    "tipologiaUnita": {
+      "appartamento": "apartamento",
+      "box": "garagem",
+      "cantina": "depósito",
+      "negozio": "loja",
+      "ufficio": "escritório",
+      "altro": "outro"
+    },
+    "ruoloUnita": {
+      "proprietario": "proprietário",
+      "inquilino": "inquilino",
+      "usufruttuario": "usufrutuário",
+      "comodatario": "comodatário"
+    },
+    "statoEsercizio": {
+      "aperto": "aberto",
+      "chiuso": "fechado",
+      "approvato": "aprovado"
+    },
+    "tipologiaRata": {
+      "ordinaria": "ordinária",
+      "straordinaria": "extraordinária"
+    },
+    "statoPagamento": {
+      "non_pagato": "não pago",
+      "parziale": "parcial",
+      "pagato": "pago",
+      "scaduto": "vencido"
+    },
+    "metodoPagamento": {
+      "bonifico": "transferência",
+      "mav": "mav",
+      "pagopa": "pagopa",
+      "contanti": "dinheiro",
+      "assegno": "cheque",
+      "carta": "cartão"
+    },
+    "tipologiaDocumento": {
+      "verbale": "ata",
+      "contratto": "contrato",
+      "fattura": "fatura",
+      "regolamento": "regulamento",
+      "preventivo": "orçamento",
+      "consuntivo": "balanço",
+      "convocazione": "convocação",
+      "polizza": "apólice",
+      "altro": "outro"
+    },
+    "visibilitaDocumento": {
+      "tutti": "todos",
+      "amministratore": "administrador",
+      "specifica_unita": "unidade específica"
+    },
+    "tipologiaPolizza": {
+      "globale_fabbricato": "global do edifício",
+      "rc": "responsabilidade civil",
+      "incendio": "incêndio",
+      "furto": "furto",
+      "altro": "outro"
+    },
+    "prioritaAvviso": {
+      "info": "info",
+      "importante": "importante",
+      "urgente": "urgente"
+    },
+    "destinatariAvviso": {
+      "tutti": "todos",
+      "amministratore": "administrador",
+      "condomini": "condôminos",
+      "portieri": "porteiros"
+    },
+    "tipologiaAssemblea": {
+      "ordinaria": "ordinária",
+      "straordinaria": "extraordinária"
+    },
+    "convocazione": {
+      "prima": "primeira",
+      "seconda": "segunda"
+    },
+    "modalitaAssemblea": {
+      "presenza": "presencial",
+      "online": "online",
+      "mista": "mista"
+    },
+    "tipoRifiuto": {
+      "umido": "úmido",
+      "plastica": "plástico",
+      "carta": "papel",
+      "vetro": "vidro",
+      "indifferenziato": "rejeito",
+      "organico": "orgânico",
+      "metallo": "metal"
+    },
+    "statoPacco": {
+      "in_giacenza": "em espera",
+      "ritirato": "retirado",
+      "rispedito": "reenviado"
+    },
+    "statoSegnalazione": {
+      "aperta": "aberta",
+      "in_lavorazione": "em andamento",
+      "risolta": "resolvida",
+      "chiusa": "fechada",
+      "annullata": "cancelada"
+    },
+    "giorniSettimana": {
+      "0": "Domingo",
+      "1": "Segunda-feira",
+      "2": "Terça-feira",
+      "3": "Quarta-feira",
+      "4": "Quinta-feira",
+      "5": "Sexta-feira",
+      "6": "Sábado"
+    },
+    "categoriaSpesa": {
+      "pulizie": "limpeza",
+      "manutenzione": "manutenção",
+      "energia": "energia elétrica",
+      "acqua": "água",
+      "ascensore": "elevador",
+      "assicurazione": "seguro",
+      "giardinaggio": "jardinagem",
+      "amministrazione": "administração",
+      "altro": "outro"
+    },
+    "eventoTipo": {
+      "assemblea": "assembleia",
+      "manutenzione": "manutenção",
+      "scadenza": "prazo",
+      "riunione": "reunião",
+      "altro": "outro"
+    },
+    "votoScelta": {
+      "favorevole": "a favor",
+      "contrario": "contra",
+      "astenuto": "abstenção"
+    }
+  },
+  "errors": {
+    "title": "Ocorreu um erro",
+    "generic": "Algo deu errado. Tente novamente.",
+    "network": "Problema de conexão. Verifique a rede e tente novamente.",
+    "notConfigured": "Aplicativo não configurado corretamente.",
+    "boundaryTitle": "Ops, algo deu errado",
+    "boundaryText": "Ocorreu um erro inesperado. Tente recarregar a página.",
+    "reload": "Recarregar a página",
+    "auth": {
+      "invalidCredentials": "E-mail ou senha incorretos.",
+      "sessionExpired": "Sessão expirada. Faça login novamente."
+    },
+    "db": {
+      "duplicate": "Já existe um elemento com estes dados.",
+      "foreignKey": "Operação não permitida: o elemento está vinculado a outros dados.",
+      "notNull": "Preencha todos os campos obrigatórios.",
+      "permission": "Você não tem permissão para esta operação.",
+      "notFound": "Elemento não encontrado."
+    },
+    "upload": "Falha ao enviar o arquivo.",
+    "alreadyVoted": "Você já registrou seu voto.",
+    "noVoteRight": "Você não tem direito a voto nesta votação."
+  },
+  "spese": {
+    "title": "Despesas do condomínio",
+    "subtitle": "Distribuição por categoria",
+    "empty": "Nenhuma despesa registrada.",
+    "category": "Categoria",
+    "amount": "Valor",
+    "total": "Total",
+    "period": "Exercício"
+  },
+  "calendario": {
+    "title": "Calendário",
+    "subtitle": "Eventos, assembleias e vencimentos",
+    "empty": "Nenhum evento programado."
+  },
+  "spazi": {
+    "title": "Espaços comuns",
+    "subtitle": "Reserve os espaços do seu condomínio",
+    "empty": "Nenhum espaço comum disponível.",
+    "capacity": "Capacidade",
+    "book": "Reservar",
+    "bookTitle": "Reservar: {{name}}",
+    "from": "Das",
+    "to": "Às",
+    "note": "Observações",
+    "myBookings": "Minhas reservas",
+    "noBookings": "Nenhuma reserva.",
+    "cancel": "Cancelar reserva",
+    "overlap": "Espaço já reservado nesse horário.",
+    "booked": "Reserva confirmada"
+  },
+  "assemblee": {
+    "title": "Assembleias",
+    "subtitle": "Convocações, arquivo e votações",
+    "empty": "Nenhuma assembleia.",
+    "agenda": "Pauta do dia",
+    "upcoming": "Programadas",
+    "archive": "Arquivo",
+    "votings": "Votações",
+    "vote": "Votar",
+    "voteTitle": "Votar: {{title}}",
+    "voted": "Você já votou",
+    "closedVoting": "Votação encerrada",
+    "results": "Resultados",
+    "convoke": "Convocar (enviar notificações)",
+    "convoked": "Convocação enviada aos condôminos",
+    "newVoting": "＋ Nova votação",
+    "openVoting": "Abrir votação",
+    "closeVoting": "Encerrar votação",
+    "weight": "Peso das frações ideais"
+  },
+  "raccoltaPage": {
+    "title": "Coleta seletiva",
+    "subtitle": "Calendário de exposição de resíduos",
+    "empty": "Nenhum calendário de coleta disponível."
+  },
+  "pacchiPage": {
+    "title": "Encomendas",
+    "subtitleResident": "As encomendas que estão chegando para você",
+    "subtitleStaff": "Gestão de encomendas na portaria",
+    "empty": "Nenhuma encomenda.",
+    "new": "＋ Registrar encomenda",
+    "markCollected": "Marcar como retirada",
+    "collected": "Retirada",
+    "recipient": "Destinatário"
+  },
+  "contatti": {
+    "title": "Contatos",
+    "subtitle": "Administrador e referências úteis",
+    "admin": "Administrador",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "empty": "Nenhum contato disponível."
+  },
+  "notifiche": {
+    "title": "Notificações",
+    "empty": "Nenhuma notificação.",
+    "markAllRead": "Marcar todas como lidas",
+    "unread": "não lidas"
+  },
+  "anagrafica": {
+    "title": "Cadastro e funções",
+    "subtitle": "Gerencie condôminos, porteiros e acessos",
+    "empty": "Nenhum usuário.",
+    "new": "＋ Novo usuário",
+    "role": "Função",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "assignUnit": "Atribuir a uma unidade",
+    "assignRole": "Função na unidade",
+    "onboarding": "Integração de novo condômino",
+    "onboardingHint": "Crie o perfil e vincule-o a uma unidade: o condômino verá imediatamente os boletos, avisos e documentos do seu condomínio.",
+    "invite": "Criar e vincular"
+  },
+  "archivio": {
+    "title": "Arquivo por unidade",
+    "subtitle": "Histórico por unidade imobiliária",
+    "selectUnit": "Escolha uma unidade",
+    "bills": "Boletos",
+    "docs": "Documentos",
+    "reports": "Ocorrências",
+    "residents": "Pessoas vinculadas",
+    "empty": "Nenhum dado para esta unidade."
+  },
+  "segnalazioni": {
+    "photo": "Foto",
+    "addPhoto": "Adicionar foto",
+    "viewPhoto": "Ver foto",
+    "assignee": "Responsável",
+    "unassigned": "Não atribuída",
+    "assign": "Atribuir a"
+  }
+}

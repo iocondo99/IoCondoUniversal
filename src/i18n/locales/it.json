@@ -1,0 +1,554 @@
+{
+  "app": {
+    "name": "Il mio Condominio",
+    "loginTagline": "Accedi per vedere bollettini, avvisi e documenti",
+    "footer": "Gestione Condominio · versione dimostrativa"
+  },
+  "common": {
+    "save": "Salva",
+    "saving": "Salvataggio…",
+    "cancel": "Annulla",
+    "create": "Crea",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "open": "Apri",
+    "add": "＋ Aggiungi",
+    "choose": "— scegli —",
+    "yes": "Sì",
+    "none": "—",
+    "confirmDelete": "Eliminare definitivamente questo elemento?",
+    "close": "Chiudi",
+    "downloadPdf": "Scarica PDF",
+    "upload": "Carica file",
+    "uploading": "Caricamento…",
+    "file": "File",
+    "noFile": "Nessun file",
+    "view": "Apri",
+    "send": "Invia",
+    "sending": "Invio…",
+    "all": "Tutti",
+    "confirm": "Conferma",
+    "back": "Indietro",
+    "total": "Totale"
+  },
+  "nav": {
+    "home": "Home",
+    "amministrazione": "Amministrazione",
+    "buildings": "Condomìni",
+    "bills": "Bollettini",
+    "notices": "Avvisi",
+    "documents": "Documenti",
+    "reports": "Segnalazioni",
+    "logout": "Esci",
+    "spese": "Spese",
+    "calendario": "Calendario",
+    "spazi": "Spazi",
+    "assemblee": "Assemblee",
+    "raccolta": "Raccolta",
+    "pacchi": "Pacchi",
+    "contatti": "Contatti",
+    "notifiche": "Notifiche",
+    "anagrafica": "Anagrafica",
+    "archivio": "Archivio"
+  },
+  "language": {
+    "label": "Lingua"
+  },
+  "roles": {
+    "super_admin": "Super amministratore",
+    "admin": "Amministratore",
+    "portiere": "Portiere",
+    "condomino": "Condòmino"
+  },
+  "auth": {
+    "emailLabel": "Indirizzo email",
+    "emailPlaceholder": "nome@esempio.it",
+    "passwordLabel": "Password",
+    "signIn": "Entra",
+    "signingIn": "Accesso in corso…",
+    "envWarning": "⚠️ Configura il file .env con l'URL e la chiave del tuo progetto Supabase.",
+    "demoHint": "Prova rapida con utenti demo (password Demo1234!):",
+    "demo": {
+      "admin": "Amministratore",
+      "mario": "Condòmino (Mario)",
+      "portiere": "Portiere"
+    }
+  },
+  "dashboard": {
+    "greeting": "Ciao {{name}} 👋",
+    "subtitle": "Ecco un riepilogo della situazione.",
+    "buildings": "Condomìni",
+    "billsToPay": "Bollettini da pagare",
+    "notices": "Avvisi",
+    "openReports": "Segnalazioni aperte",
+    "insuranceTitle": "Polizze in scadenza",
+    "insuranceSub": "Polizze che scadono entro 60 giorni",
+    "sendReminder": "Invia promemoria",
+    "reminderSent": "Promemoria inviato"
+  },
+  "bills": {
+    "title": "I tuoi bollettini",
+    "subtitle": "Importi, scadenze e stato dei pagamenti",
+    "emptyTitle": "Nessun bollettino",
+    "emptyText": "Al momento non ci sono bollettini da mostrare.",
+    "installment": "Rata",
+    "dueShort": "scad. {{date}}",
+    "status": {
+      "pagato": "Pagato",
+      "parziale": "Parziale",
+      "scaduto": "Scaduto",
+      "non_pagato": "Da pagare"
+    },
+    "generate": "Genera bollettini in massa",
+    "generated": "Bollettini generati",
+    "generateHint": "Crea un bollettino per ogni unità a partire da una rata.",
+    "selectInstallment": "Scegli la rata",
+    "notify": "Notifica ai condòmini"
+  },
+  "notices": {
+    "title": "Avvisi",
+    "subtitle": "Comunicazioni dall'amministratore",
+    "emptyTitle": "Nessun avviso",
+    "emptyText": "Non ci sono comunicazioni al momento.",
+    "priority": {
+      "info": "Informazione",
+      "importante": "Importante",
+      "urgente": "Urgente"
+    }
+  },
+  "documents": {
+    "title": "Documenti",
+    "subtitle": "Regolamenti, verbali e comunicazioni",
+    "emptyTitle": "Nessun documento",
+    "emptyText": "Non ci sono documenti disponibili per te.",
+    "notUploaded": "Il file non è ancora stato caricato nello Storage."
+  },
+  "reports": {
+    "title": "Segnalazioni",
+    "subtitleStaff": "Gestisci le segnalazioni dei condòmini",
+    "subtitleResident": "Guasti e problemi da segnalare",
+    "new": "＋ Nuova segnalazione",
+    "emptyTitle": "Nessuna segnalazione",
+    "emptyText": "Quando segnali un problema lo trovi qui.",
+    "building": "Condominio",
+    "problemType": "Tipo di problema",
+    "titleField": "Titolo",
+    "titlePlaceholder": "Es. Luce delle scale guasta",
+    "description": "Descrizione",
+    "descriptionPlaceholder": "Descrivi il problema…",
+    "submit": "Invia segnalazione",
+    "submitting": "Invio…",
+    "changeStatus": "Cambia stato:",
+    "type": {
+      "guasto": "guasto",
+      "rumore": "rumore",
+      "pulizia": "pulizia",
+      "sicurezza": "sicurezza",
+      "vicinato": "vicinato",
+      "altro": "altro"
+    }
+  },
+  "buildings": {
+    "title": "Condomìni",
+    "subtitle": "Scegli un condominio per gestirlo",
+    "new": "＋ Nuovo condominio",
+    "newTitle": "Nuovo condominio",
+    "emptyTitle": "Nessun condominio",
+    "emptyText": "Aggiungi il primo condominio.",
+    "open": "Apri →",
+    "backAll": "← Tutti i condomìni",
+    "news_one": "{{count}} notizia",
+    "news_other": "{{count}} notizie",
+    "fields": {
+      "denominazione": "Nome del condominio",
+      "indirizzo": "Indirizzo",
+      "citta": "Città",
+      "cap": "CAP",
+      "provincia": "Provincia (sigla)",
+      "codice_fiscale": "Codice fiscale"
+    }
+  },
+  "entity": {
+    "emptyTitle": "Nessun elemento",
+    "emptyReadOnly": "Niente da mostrare.",
+    "emptyEditable": "Usa il pulsante per aggiungere il primo.",
+    "newTitle": "Nuovo: {{title}}",
+    "editTitle": "Modifica {{title}}"
+  },
+  "detail": {
+    "tabs": {
+      "unita": "Unità",
+      "condomini": "Condòmini",
+      "esercizi": "Esercizi",
+      "rate": "Rate",
+      "bollettini": "Bollettini",
+      "documenti": "Documenti",
+      "avvisi": "Avvisi",
+      "assemblee": "Assemblee",
+      "polizze": "Polizze",
+      "spazi": "Spazi",
+      "raccolta": "Raccolta",
+      "pacchi": "Pacchi",
+      "spese": "Spese",
+      "eventi": "Eventi"
+    },
+    "titles": {
+      "unita": "Unità immobiliari",
+      "condomini": "Condòmini (assegnazioni)",
+      "esercizi": "Esercizi contabili",
+      "rate": "Rate",
+      "bollettini": "Bollettini",
+      "documenti": "Documenti",
+      "avvisi": "Avvisi",
+      "assemblee": "Assemblee",
+      "polizze": "Polizze assicurative",
+      "spazi": "Spazi comuni",
+      "raccolta": "Raccolta differenziata",
+      "pacchi": "Pacchi",
+      "spese": "Spese",
+      "eventi": "Eventi"
+    },
+    "f": {
+      "identificativo": "Identificativo",
+      "tipo": "Tipo",
+      "tipologia": "Tipologia",
+      "piano": "Piano",
+      "scala": "Scala",
+      "millesimi": "Millesimi",
+      "millesimi_proprieta": "Millesimi proprietà",
+      "superficie": "Superficie (mq)",
+      "persona": "Persona",
+      "unita": "Unità",
+      "ruolo": "Ruolo",
+      "dal": "Dal",
+      "al": "Al",
+      "data_inizio": "Data inizio",
+      "data_fine": "Data fine",
+      "esercizio": "Esercizio",
+      "nome": "Nome",
+      "stato": "Stato",
+      "descrizione": "Descrizione",
+      "scadenza": "Scadenza",
+      "totale": "Totale",
+      "importo_totale": "Importo totale",
+      "dovuto": "Dovuto",
+      "importo_dovuto": "Importo dovuto",
+      "stato_pagamento": "Stato pagamento",
+      "importo_pagato": "Importo pagato",
+      "metodo": "Metodo",
+      "titolo": "Titolo",
+      "contenuto": "Contenuto",
+      "priorita": "Priorità",
+      "destinatari": "Destinatari",
+      "visibilita": "Visibilità",
+      "data_documento": "Data documento",
+      "file_url": "Percorso file (Storage)",
+      "file_url_ph": "es. {{prefix}}/file.pdf",
+      "data": "Data",
+      "data_ora": "Data e ora",
+      "luogo": "Luogo",
+      "modalita": "Modalità",
+      "convocazione": "Convocazione",
+      "ordine_giorno": "Ordine del giorno",
+      "compagnia": "Compagnia",
+      "numero_polizza": "Numero polizza",
+      "decorrenza": "Decorrenza",
+      "premio_annuale": "Premio annuale",
+      "capienza": "Capienza",
+      "capienza_max": "Capienza massima",
+      "durata_max": "Durata max (minuti)",
+      "anticipo_min": "Preavviso minimo (ore)",
+      "rifiuto": "Rifiuto",
+      "tipo_rifiuto": "Tipo di rifiuto",
+      "giorno": "Giorno",
+      "orario": "Orario",
+      "orario_esposizione": "Orario esposizione",
+      "corriere": "Corriere",
+      "unita_destinataria": "Unità destinataria"
+    }
+  },
+  "enums": {
+    "tipologiaUnita": {
+      "appartamento": "appartamento",
+      "box": "box",
+      "cantina": "cantina",
+      "negozio": "negozio",
+      "ufficio": "ufficio",
+      "altro": "altro"
+    },
+    "ruoloUnita": {
+      "proprietario": "proprietario",
+      "inquilino": "inquilino",
+      "usufruttuario": "usufruttuario",
+      "comodatario": "comodatario"
+    },
+    "statoEsercizio": {
+      "aperto": "aperto",
+      "chiuso": "chiuso",
+      "approvato": "approvato"
+    },
+    "tipologiaRata": {
+      "ordinaria": "ordinaria",
+      "straordinaria": "straordinaria"
+    },
+    "statoPagamento": {
+      "non_pagato": "non pagato",
+      "parziale": "parziale",
+      "pagato": "pagato",
+      "scaduto": "scaduto"
+    },
+    "metodoPagamento": {
+      "bonifico": "bonifico",
+      "mav": "mav",
+      "pagopa": "pagopa",
+      "contanti": "contanti",
+      "assegno": "assegno",
+      "carta": "carta"
+    },
+    "tipologiaDocumento": {
+      "verbale": "verbale",
+      "contratto": "contratto",
+      "fattura": "fattura",
+      "regolamento": "regolamento",
+      "preventivo": "preventivo",
+      "consuntivo": "consuntivo",
+      "convocazione": "convocazione",
+      "polizza": "polizza",
+      "altro": "altro"
+    },
+    "visibilitaDocumento": {
+      "tutti": "tutti",
+      "amministratore": "amministratore",
+      "specifica_unita": "unità specifica"
+    },
+    "tipologiaPolizza": {
+      "globale_fabbricato": "globale fabbricato",
+      "rc": "rc",
+      "incendio": "incendio",
+      "furto": "furto",
+      "altro": "altro"
+    },
+    "prioritaAvviso": {
+      "info": "info",
+      "importante": "importante",
+      "urgente": "urgente"
+    },
+    "destinatariAvviso": {
+      "tutti": "tutti",
+      "amministratore": "amministratore",
+      "condomini": "condòmini",
+      "portieri": "portieri"
+    },
+    "tipologiaAssemblea": {
+      "ordinaria": "ordinaria",
+      "straordinaria": "straordinaria"
+    },
+    "convocazione": {
+      "prima": "prima",
+      "seconda": "seconda"
+    },
+    "modalitaAssemblea": {
+      "presenza": "presenza",
+      "online": "online",
+      "mista": "mista"
+    },
+    "tipoRifiuto": {
+      "umido": "umido",
+      "plastica": "plastica",
+      "carta": "carta",
+      "vetro": "vetro",
+      "indifferenziato": "indifferenziato",
+      "organico": "organico",
+      "metallo": "metallo"
+    },
+    "statoPacco": {
+      "in_giacenza": "in giacenza",
+      "ritirato": "ritirato",
+      "rispedito": "rispedito"
+    },
+    "statoSegnalazione": {
+      "aperta": "aperta",
+      "in_lavorazione": "in lavorazione",
+      "risolta": "risolta",
+      "chiusa": "chiusa",
+      "annullata": "annullata"
+    },
+    "giorniSettimana": {
+      "0": "Domenica",
+      "1": "Lunedì",
+      "2": "Martedì",
+      "3": "Mercoledì",
+      "4": "Giovedì",
+      "5": "Venerdì",
+      "6": "Sabato"
+    },
+    "categoriaSpesa": {
+      "pulizie": "pulizie",
+      "manutenzione": "manutenzione",
+      "energia": "energia elettrica",
+      "acqua": "acqua",
+      "ascensore": "ascensore",
+      "assicurazione": "assicurazione",
+      "giardinaggio": "giardinaggio",
+      "amministrazione": "amministrazione",
+      "altro": "altro"
+    },
+    "eventoTipo": {
+      "assemblea": "assemblea",
+      "manutenzione": "manutenzione",
+      "scadenza": "scadenza",
+      "riunione": "riunione",
+      "altro": "altro"
+    },
+    "votoScelta": {
+      "favorevole": "favorevole",
+      "contrario": "contrario",
+      "astenuto": "astenuto"
+    }
+  },
+  "errors": {
+    "title": "Si è verificato un errore",
+    "generic": "Qualcosa è andato storto. Riprova.",
+    "network": "Problema di connessione. Controlla la rete e riprova.",
+    "notConfigured": "Applicazione non configurata correttamente.",
+    "boundaryTitle": "Ops, qualcosa è andato storto",
+    "boundaryText": "Si è verificato un errore imprevisto. Prova a ricaricare la pagina.",
+    "reload": "Ricarica la pagina",
+    "auth": {
+      "invalidCredentials": "Email o password non corretti.",
+      "sessionExpired": "Sessione scaduta. Effettua di nuovo l'accesso."
+    },
+    "db": {
+      "duplicate": "Esiste già un elemento con questi dati.",
+      "foreignKey": "Operazione non consentita: l'elemento è collegato ad altri dati.",
+      "notNull": "Compila tutti i campi obbligatori.",
+      "permission": "Non hai i permessi per questa operazione.",
+      "notFound": "Elemento non trovato."
+    },
+    "upload": "Caricamento del file non riuscito.",
+    "alreadyVoted": "Hai già espresso il tuo voto.",
+    "noVoteRight": "Non hai diritto di voto per questa votazione."
+  },
+  "spese": {
+    "title": "Spese del condominio",
+    "subtitle": "Ripartizione per categoria",
+    "empty": "Nessuna spesa registrata.",
+    "category": "Categoria",
+    "amount": "Importo",
+    "total": "Totale",
+    "period": "Esercizio"
+  },
+  "calendario": {
+    "title": "Calendario",
+    "subtitle": "Eventi, assemblee e scadenze",
+    "empty": "Nessun evento in programma."
+  },
+  "spazi": {
+    "title": "Spazi comuni",
+    "subtitle": "Prenota gli spazi del tuo condominio",
+    "empty": "Nessuno spazio comune disponibile.",
+    "capacity": "Capienza",
+    "book": "Prenota",
+    "bookTitle": "Prenota: {{name}}",
+    "from": "Dalle",
+    "to": "Alle",
+    "note": "Note",
+    "myBookings": "Le mie prenotazioni",
+    "noBookings": "Nessuna prenotazione.",
+    "cancel": "Annulla prenotazione",
+    "overlap": "Spazio già prenotato in quell orario.",
+    "booked": "Prenotazione confermata"
+  },
+  "assemblee": {
+    "title": "Assemblee",
+    "subtitle": "Convocazioni, archivio e votazioni",
+    "empty": "Nessuna assemblea.",
+    "agenda": "Ordine del giorno",
+    "upcoming": "In programma",
+    "archive": "Archivio",
+    "votings": "Votazioni",
+    "vote": "Vota",
+    "voteTitle": "Vota: {{title}}",
+    "voted": "Hai già votato",
+    "closedVoting": "Votazione chiusa",
+    "results": "Risultati",
+    "convoke": "Convoca (invia notifiche)",
+    "convoked": "Convocazione inviata ai condòmini",
+    "newVoting": "＋ Nuova votazione",
+    "openVoting": "Apri votazione",
+    "closeVoting": "Chiudi votazione",
+    "weight": "Peso millesimi"
+  },
+  "raccoltaPage": {
+    "title": "Raccolta differenziata",
+    "subtitle": "Calendario di esposizione dei rifiuti",
+    "empty": "Nessun calendario di raccolta disponibile."
+  },
+  "pacchiPage": {
+    "title": "Pacchi",
+    "subtitleResident": "I pacchi in arrivo per te",
+    "subtitleStaff": "Gestione pacchi in portineria",
+    "empty": "Nessun pacco.",
+    "new": "＋ Registra pacco",
+    "markCollected": "Segna come ritirato",
+    "collected": "Ritirato",
+    "recipient": "Destinatario"
+  },
+  "contatti": {
+    "title": "Contatti",
+    "subtitle": "Amministratore e riferimenti utili",
+    "admin": "Amministratore",
+    "email": "Email",
+    "phone": "Telefono",
+    "empty": "Nessun contatto disponibile."
+  },
+  "notifiche": {
+    "title": "Notifiche",
+    "empty": "Nessuna notifica.",
+    "markAllRead": "Segna tutte come lette",
+    "unread": "non lette",
+    "seeAll": "Vedi tutte"
+  },
+  "amministrazione": {
+    "title": "Amministrazione",
+    "subtitle": "Scegli quali sezioni e funzionalità mostrare ai condòmini",
+    "chooseBuilding": "Condominio da configurare",
+    "hint": "Disattiva una sezione per nasconderla dal menu e dalla home dei condòmini di questo condominio. La sezione resta sempre accessibile a te.",
+    "visible": "Visibile ai condòmini",
+    "hidden": "Nascosta ai condòmini"
+  },
+  "anagrafica": {
+    "title": "Anagrafica e ruoli",
+    "subtitle": "Gestisci condòmini, portieri e accessi",
+    "empty": "Nessun utente.",
+    "new": "＋ Nuovo utente",
+    "role": "Ruolo",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Email",
+    "phone": "Telefono",
+    "assignUnit": "Assegna a unità",
+    "assignRole": "Ruolo sull unità",
+    "onboarding": "Onboarding nuovo condòmino",
+    "onboardingHint": "Crea il profilo e collegalo a un unità: il condòmino vedrà subito bollettini, avvisi e documenti del suo condominio.",
+    "invite": "Crea e collega"
+  },
+  "archivio": {
+    "title": "Archivio per unità",
+    "subtitle": "Storico per unità immobiliare",
+    "selectUnit": "Scegli un unità",
+    "bills": "Bollettini",
+    "docs": "Documenti",
+    "reports": "Segnalazioni",
+    "residents": "Persone collegate",
+    "empty": "Nessun dato per questa unità."
+  },
+  "segnalazioni": {
+    "photo": "Foto",
+    "addPhoto": "Aggiungi foto",
+    "viewPhoto": "Vedi foto",
+    "assignee": "Assegnatario",
+    "unassigned": "Non assegnata",
+    "assign": "Assegna a"
+  }
+}

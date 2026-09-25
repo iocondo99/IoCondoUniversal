@@ -1,0 +1,542 @@
+{
+  "app": {
+    "name": "Ma Copropriété",
+    "loginTagline": "Connectez-vous pour voir les avis d'échéance, les annonces et les documents",
+    "footer": "Gestion de copropriété · version de démonstration"
+  },
+  "common": {
+    "save": "Enregistrer",
+    "saving": "Enregistrement…",
+    "cancel": "Annuler",
+    "create": "Créer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "open": "Ouvrir",
+    "add": "＋ Ajouter",
+    "choose": "— choisir —",
+    "yes": "Oui",
+    "none": "—",
+    "confirmDelete": "Supprimer définitivement cet élément ?",
+    "close": "Fermer",
+    "downloadPdf": "Télécharger le PDF",
+    "upload": "Téléverser un fichier",
+    "uploading": "Téléversement…",
+    "file": "Fichier",
+    "noFile": "Aucun fichier",
+    "view": "Ouvrir",
+    "send": "Envoyer",
+    "sending": "Envoi…",
+    "all": "Tous",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "total": "Total"
+  },
+  "nav": {
+    "home": "Accueil",
+    "buildings": "Copropriétés",
+    "bills": "Avis d'échéance",
+    "notices": "Annonces",
+    "documents": "Documents",
+    "reports": "Signalements",
+    "logout": "Déconnexion",
+    "spese": "Dépenses",
+    "calendario": "Calendrier",
+    "spazi": "Espaces",
+    "assemblee": "Assemblées",
+    "raccolta": "Tri sélectif",
+    "pacchi": "Colis",
+    "contatti": "Contacts",
+    "notifiche": "Notifications",
+    "anagrafica": "Répertoire",
+    "archivio": "Archives"
+  },
+  "language": {
+    "label": "Langue"
+  },
+  "roles": {
+    "super_admin": "Super administrateur",
+    "admin": "Administrateur",
+    "portiere": "Concierge",
+    "condomino": "Copropriétaire"
+  },
+  "auth": {
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "nom@exemple.fr",
+    "passwordLabel": "Mot de passe",
+    "signIn": "Se connecter",
+    "signingIn": "Connexion en cours…",
+    "envWarning": "⚠️ Configurez le fichier .env avec l'URL et la clé de votre projet Supabase.",
+    "demoHint": "Essai rapide avec des utilisateurs de démonstration (mot de passe Demo1234!) :",
+    "demo": {
+      "admin": "Administrateur",
+      "mario": "Copropriétaire (Mario)",
+      "portiere": "Concierge"
+    }
+  },
+  "dashboard": {
+    "greeting": "Bonjour {{name}} 👋",
+    "subtitle": "Voici un récapitulatif de la situation.",
+    "buildings": "Copropriétés",
+    "billsToPay": "Avis d'échéance à payer",
+    "notices": "Annonces",
+    "openReports": "Signalements ouverts",
+    "insuranceTitle": "Polices arrivant à échéance",
+    "insuranceSub": "Polices qui expirent dans les 60 jours",
+    "sendReminder": "Envoyer un rappel",
+    "reminderSent": "Rappel envoyé"
+  },
+  "bills": {
+    "title": "Vos avis d'échéance",
+    "subtitle": "Montants, échéances et état des paiements",
+    "emptyTitle": "Aucun avis d'échéance",
+    "emptyText": "Aucun avis d'échéance à afficher pour le moment.",
+    "installment": "Échéance",
+    "dueShort": "éch. {{date}}",
+    "status": {
+      "pagato": "Payé",
+      "parziale": "Partiel",
+      "scaduto": "Échu",
+      "non_pagato": "À payer"
+    },
+    "generate": "Générer les avis d'échéance en masse",
+    "generated": "Avis d'échéance générés",
+    "generateHint": "Créez un avis d'échéance pour chaque lot à partir d'une échéance.",
+    "selectInstallment": "Choisir l'échéance",
+    "notify": "Notifier les copropriétaires"
+  },
+  "notices": {
+    "title": "Annonces",
+    "subtitle": "Communications de l'administrateur",
+    "emptyTitle": "Aucune annonce",
+    "emptyText": "Aucune communication pour le moment.",
+    "priority": {
+      "info": "Information",
+      "importante": "Important",
+      "urgente": "Urgent"
+    }
+  },
+  "documents": {
+    "title": "Documents",
+    "subtitle": "Règlements, procès-verbaux et communications",
+    "emptyTitle": "Aucun document",
+    "emptyText": "Aucun document disponible pour vous.",
+    "notUploaded": "Le fichier n'a pas encore été téléversé dans le Stockage."
+  },
+  "reports": {
+    "title": "Signalements",
+    "subtitleStaff": "Gérez les signalements des copropriétaires",
+    "subtitleResident": "Pannes et problèmes à signaler",
+    "new": "＋ Nouveau signalement",
+    "emptyTitle": "Aucun signalement",
+    "emptyText": "Lorsque vous signalez un problème, vous le retrouvez ici.",
+    "building": "Copropriété",
+    "problemType": "Type de problème",
+    "titleField": "Titre",
+    "titlePlaceholder": "Ex. Lumière de l'escalier en panne",
+    "description": "Description",
+    "descriptionPlaceholder": "Décrivez le problème…",
+    "submit": "Envoyer le signalement",
+    "submitting": "Envoi…",
+    "changeStatus": "Changer l'état :",
+    "type": {
+      "guasto": "panne",
+      "rumore": "bruit",
+      "pulizia": "propreté",
+      "sicurezza": "sécurité",
+      "vicinato": "voisinage",
+      "altro": "autre"
+    }
+  },
+  "buildings": {
+    "title": "Copropriétés",
+    "subtitle": "Choisissez une copropriété pour la gérer",
+    "new": "＋ Nouvelle copropriété",
+    "newTitle": "Nouvelle copropriété",
+    "emptyTitle": "Aucune copropriété",
+    "emptyText": "Ajoutez la première copropriété.",
+    "open": "Ouvrir →",
+    "backAll": "← Toutes les copropriétés",
+    "fields": {
+      "denominazione": "Nom de la copropriété",
+      "indirizzo": "Adresse",
+      "citta": "Ville",
+      "cap": "Code postal",
+      "provincia": "Département (sigle)",
+      "codice_fiscale": "Numéro fiscal"
+    }
+  },
+  "entity": {
+    "emptyTitle": "Aucun élément",
+    "emptyReadOnly": "Rien à afficher.",
+    "emptyEditable": "Utilisez le bouton pour ajouter le premier.",
+    "newTitle": "Nouveau : {{title}}",
+    "editTitle": "Modifier {{title}}"
+  },
+  "detail": {
+    "tabs": {
+      "unita": "Lots",
+      "condomini": "Copropriétaires",
+      "esercizi": "Exercices",
+      "rate": "Échéances",
+      "bollettini": "Avis d'échéance",
+      "documenti": "Documents",
+      "avvisi": "Annonces",
+      "assemblee": "Assemblées",
+      "polizze": "Polices",
+      "spazi": "Espaces",
+      "raccolta": "Tri sélectif",
+      "pacchi": "Colis",
+      "spese": "Dépenses",
+      "eventi": "Événements"
+    },
+    "titles": {
+      "unita": "Lots immobiliers",
+      "condomini": "Copropriétaires (attributions)",
+      "esercizi": "Exercices comptables",
+      "rate": "Échéances",
+      "bollettini": "Avis d'échéance",
+      "documenti": "Documents",
+      "avvisi": "Annonces",
+      "assemblee": "Assemblées",
+      "polizze": "Polices d'assurance",
+      "spazi": "Espaces communs",
+      "raccolta": "Tri sélectif",
+      "pacchi": "Colis",
+      "spese": "Dépenses",
+      "eventi": "Événements"
+    },
+    "f": {
+      "identificativo": "Identifiant",
+      "tipo": "Type",
+      "tipologia": "Catégorie",
+      "piano": "Étage",
+      "scala": "Escalier",
+      "millesimi": "Tantièmes",
+      "millesimi_proprieta": "Tantièmes de propriété",
+      "superficie": "Superficie (m²)",
+      "persona": "Personne",
+      "unita": "Lot",
+      "ruolo": "Rôle",
+      "dal": "Du",
+      "al": "Au",
+      "data_inizio": "Date de début",
+      "data_fine": "Date de fin",
+      "esercizio": "Exercice",
+      "nome": "Nom",
+      "stato": "État",
+      "descrizione": "Description",
+      "scadenza": "Échéance",
+      "totale": "Total",
+      "importo_totale": "Montant total",
+      "dovuto": "Dû",
+      "importo_dovuto": "Montant dû",
+      "stato_pagamento": "État du paiement",
+      "importo_pagato": "Montant payé",
+      "metodo": "Méthode",
+      "titolo": "Titre",
+      "contenuto": "Contenu",
+      "priorita": "Priorité",
+      "destinatari": "Destinataires",
+      "visibilita": "Visibilité",
+      "data_documento": "Date du document",
+      "file_url": "Chemin du fichier (Stockage)",
+      "file_url_ph": "ex. {{prefix}}/fichier.pdf",
+      "data": "Date",
+      "data_ora": "Date et heure",
+      "luogo": "Lieu",
+      "modalita": "Modalité",
+      "convocazione": "Convocation",
+      "ordine_giorno": "Ordre du jour",
+      "compagnia": "Compagnie",
+      "numero_polizza": "Numéro de police",
+      "decorrenza": "Prise d'effet",
+      "premio_annuale": "Prime annuelle",
+      "capienza": "Capacité",
+      "capienza_max": "Capacité maximale",
+      "durata_max": "Durée max (minutes)",
+      "anticipo_min": "Préavis minimum (heures)",
+      "rifiuto": "Déchet",
+      "tipo_rifiuto": "Type de déchet",
+      "giorno": "Jour",
+      "orario": "Horaire",
+      "orario_esposizione": "Horaire de dépôt",
+      "corriere": "Transporteur",
+      "unita_destinataria": "Lot destinataire"
+    }
+  },
+  "enums": {
+    "tipologiaUnita": {
+      "appartamento": "appartement",
+      "box": "garage",
+      "cantina": "cave",
+      "negozio": "commerce",
+      "ufficio": "bureau",
+      "altro": "autre"
+    },
+    "ruoloUnita": {
+      "proprietario": "propriétaire",
+      "inquilino": "locataire",
+      "usufruttuario": "usufruitier",
+      "comodatario": "occupant à titre gratuit"
+    },
+    "statoEsercizio": {
+      "aperto": "ouvert",
+      "chiuso": "clôturé",
+      "approvato": "approuvé"
+    },
+    "tipologiaRata": {
+      "ordinaria": "ordinaire",
+      "straordinaria": "extraordinaire"
+    },
+    "statoPagamento": {
+      "non_pagato": "non payé",
+      "parziale": "partiel",
+      "pagato": "payé",
+      "scaduto": "échu"
+    },
+    "metodoPagamento": {
+      "bonifico": "virement",
+      "mav": "mav",
+      "pagopa": "pagopa",
+      "contanti": "espèces",
+      "assegno": "chèque",
+      "carta": "carte"
+    },
+    "tipologiaDocumento": {
+      "verbale": "procès-verbal",
+      "contratto": "contrat",
+      "fattura": "facture",
+      "regolamento": "règlement",
+      "preventivo": "devis",
+      "consuntivo": "compte de gestion",
+      "convocazione": "convocation",
+      "polizza": "police",
+      "altro": "autre"
+    },
+    "visibilitaDocumento": {
+      "tutti": "tous",
+      "amministratore": "administrateur",
+      "specifica_unita": "lot spécifique"
+    },
+    "tipologiaPolizza": {
+      "globale_fabbricato": "multirisque immeuble",
+      "rc": "responsabilité civile",
+      "incendio": "incendie",
+      "furto": "vol",
+      "altro": "autre"
+    },
+    "prioritaAvviso": {
+      "info": "info",
+      "importante": "important",
+      "urgente": "urgent"
+    },
+    "destinatariAvviso": {
+      "tutti": "tous",
+      "amministratore": "administrateur",
+      "condomini": "copropriétaires",
+      "portieri": "concierges"
+    },
+    "tipologiaAssemblea": {
+      "ordinaria": "ordinaire",
+      "straordinaria": "extraordinaire"
+    },
+    "convocazione": {
+      "prima": "première",
+      "seconda": "deuxième"
+    },
+    "modalitaAssemblea": {
+      "presenza": "présentiel",
+      "online": "en ligne",
+      "mista": "mixte"
+    },
+    "tipoRifiuto": {
+      "umido": "déchets humides",
+      "plastica": "plastique",
+      "carta": "papier",
+      "vetro": "verre",
+      "indifferenziato": "ordures ménagères",
+      "organico": "déchets organiques",
+      "metallo": "métal"
+    },
+    "statoPacco": {
+      "in_giacenza": "en dépôt",
+      "ritirato": "retiré",
+      "rispedito": "réexpédié"
+    },
+    "statoSegnalazione": {
+      "aperta": "ouvert",
+      "in_lavorazione": "en cours de traitement",
+      "risolta": "résolu",
+      "chiusa": "clôturé",
+      "annullata": "annulé"
+    },
+    "giorniSettimana": {
+      "0": "Dimanche",
+      "1": "Lundi",
+      "2": "Mardi",
+      "3": "Mercredi",
+      "4": "Jeudi",
+      "5": "Vendredi",
+      "6": "Samedi"
+    },
+    "categoriaSpesa": {
+      "pulizie": "nettoyage",
+      "manutenzione": "entretien",
+      "energia": "électricité",
+      "acqua": "eau",
+      "ascensore": "ascenseur",
+      "assicurazione": "assurance",
+      "giardinaggio": "jardinage",
+      "amministrazione": "administration",
+      "altro": "autre"
+    },
+    "eventoTipo": {
+      "assemblea": "assemblée",
+      "manutenzione": "entretien",
+      "scadenza": "échéance",
+      "riunione": "réunion",
+      "altro": "autre"
+    },
+    "votoScelta": {
+      "favorevole": "pour",
+      "contrario": "contre",
+      "astenuto": "abstention"
+    }
+  },
+  "errors": {
+    "title": "Une erreur s'est produite",
+    "generic": "Quelque chose s'est mal passé. Veuillez réessayer.",
+    "network": "Problème de connexion. Vérifiez votre réseau et réessayez.",
+    "notConfigured": "Application non configurée correctement.",
+    "boundaryTitle": "Oups, quelque chose s'est mal passé",
+    "boundaryText": "Une erreur inattendue s'est produite. Essayez de recharger la page.",
+    "reload": "Recharger la page",
+    "auth": {
+      "invalidCredentials": "E-mail ou mot de passe incorrect.",
+      "sessionExpired": "Session expirée. Veuillez vous reconnecter."
+    },
+    "db": {
+      "duplicate": "Un élément avec ces données existe déjà.",
+      "foreignKey": "Opération non autorisée : l'élément est lié à d'autres données.",
+      "notNull": "Veuillez remplir tous les champs obligatoires.",
+      "permission": "Vous n'avez pas les droits pour cette opération.",
+      "notFound": "Élément introuvable."
+    },
+    "upload": "Échec du téléversement du fichier.",
+    "alreadyVoted": "Vous avez déjà exprimé votre vote.",
+    "noVoteRight": "Vous n'avez pas le droit de vote pour ce scrutin."
+  },
+  "spese": {
+    "title": "Dépenses de la copropriété",
+    "subtitle": "Répartition par catégorie",
+    "empty": "Aucune dépense enregistrée.",
+    "category": "Catégorie",
+    "amount": "Montant",
+    "total": "Total",
+    "period": "Exercice"
+  },
+  "calendario": {
+    "title": "Calendrier",
+    "subtitle": "Événements, assemblées et échéances",
+    "empty": "Aucun événement prévu."
+  },
+  "spazi": {
+    "title": "Espaces communs",
+    "subtitle": "Réservez les espaces de votre copropriété",
+    "empty": "Aucun espace commun disponible.",
+    "capacity": "Capacité",
+    "book": "Réserver",
+    "bookTitle": "Réserver : {{name}}",
+    "from": "De",
+    "to": "À",
+    "note": "Notes",
+    "myBookings": "Mes réservations",
+    "noBookings": "Aucune réservation.",
+    "cancel": "Annuler la réservation",
+    "overlap": "Espace déjà réservé à cet horaire.",
+    "booked": "Réservation confirmée"
+  },
+  "assemblee": {
+    "title": "Assemblées",
+    "subtitle": "Convocations, archives et votes",
+    "empty": "Aucune assemblée.",
+    "agenda": "Ordre du jour",
+    "upcoming": "À venir",
+    "archive": "Archives",
+    "votings": "Votes",
+    "vote": "Voter",
+    "voteTitle": "Voter : {{title}}",
+    "voted": "Vous avez déjà voté",
+    "closedVoting": "Vote clôturé",
+    "results": "Résultats",
+    "convoke": "Convoquer (envoyer les notifications)",
+    "convoked": "Convocation envoyée aux copropriétaires",
+    "newVoting": "＋ Nouveau vote",
+    "openVoting": "Ouvrir le vote",
+    "closeVoting": "Clôturer le vote",
+    "weight": "Poids en tantièmes"
+  },
+  "raccoltaPage": {
+    "title": "Tri sélectif",
+    "subtitle": "Calendrier de dépôt des déchets",
+    "empty": "Aucun calendrier de collecte disponible."
+  },
+  "pacchiPage": {
+    "title": "Colis",
+    "subtitleResident": "Les colis en attente pour vous",
+    "subtitleStaff": "Gestion des colis à la conciergerie",
+    "empty": "Aucun colis.",
+    "new": "＋ Enregistrer un colis",
+    "markCollected": "Marquer comme retiré",
+    "collected": "Retiré",
+    "recipient": "Destinataire"
+  },
+  "contatti": {
+    "title": "Contacts",
+    "subtitle": "Administrateur et références utiles",
+    "admin": "Administrateur",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "empty": "Aucun contact disponible."
+  },
+  "notifiche": {
+    "title": "Notifications",
+    "empty": "Aucune notification.",
+    "markAllRead": "Tout marquer comme lu",
+    "unread": "non lues"
+  },
+  "anagrafica": {
+    "title": "Répertoire et rôles",
+    "subtitle": "Gérez les copropriétaires, les concierges et les accès",
+    "empty": "Aucun utilisateur.",
+    "new": "＋ Nouvel utilisateur",
+    "role": "Rôle",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "assignUnit": "Affecter à un lot",
+    "assignRole": "Rôle sur le lot",
+    "onboarding": "Intégration d'un nouveau copropriétaire",
+    "onboardingHint": "Créez le profil et reliez-le à un lot : le copropriétaire verra immédiatement les avis d'échéance, les annonces et les documents de sa copropriété.",
+    "invite": "Créer et relier"
+  },
+  "archivio": {
+    "title": "Archives par lot",
+    "subtitle": "Historique par lot immobilier",
+    "selectUnit": "Choisissez un lot",
+    "bills": "Avis d'échéance",
+    "docs": "Documents",
+    "reports": "Signalements",
+    "residents": "Personnes liées",
+    "empty": "Aucune donnée pour ce lot."
+  },
+  "segnalazioni": {
+    "photo": "Photo",
+    "addPhoto": "Ajouter une photo",
+    "viewPhoto": "Voir la photo",
+    "assignee": "Affecté à",
+    "unassigned": "Non affecté",
+    "assign": "Affecter à"
+  }
+}
